@@ -6,9 +6,10 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+"build": "electron-packager ./ --platform=all --arch=x64"
   },
-  "repository": "https://github.com/ThePStar7/nootflix",
+  "repository": "https://github.com/sineflex/Exosphere",
   "keywords": [
     "Electron",
     "quick",
@@ -24,28 +25,7 @@
   },
   "dependencies": {
     "async": "^2.6.1",
-    "bp_event": "^1.2.0",
-    "bp_logger": "^1.1.1",
-    "bp_statemachine": "^1.0.14",
-    "child_process": "^1.0.2",
     "electron-packager": "^12.1.0",
-    "electron-storage": "^1.0.7",
-    "fs-extra": "^7.0.0",
-    "hls.js": "^0.10.1",
-    "http": "0.0.0",
-    "path": "^0.12.7",
-    "python-struct": "^1.0.6",
-    "readline": "^1.3.0",
-    "req-fast": "^0.2.17",
-    "request": "^2.87.0",
-    "update-electron-app": "^1.3.0",
-    "url": "^0.11.0",
-    "util": "^0.11.0"
-  },
-  "build": {
-    "appId": "com.nootflix.app",
-    "mac": {
-      "category": "your.app.category.type"
-    }
+    "update-electron-app": "^1.3.0"
   }
 }
