@@ -7,7 +7,7 @@ utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://elec
 - You can search for and watch movies or TV-Shows
 - IMDb id search 
 ## What is still todo:
-- UI
+- A proper User Interface
 ## What's planned
 - Netflix like UI
 - Android Builds
