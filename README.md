@@ -1,6 +1,7 @@
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-# Exosphere [![Build Status](https://travis-ci.org/sineflex/Exosphere.svg?branch=master)](https://travis-ci.org/sineflex/Exosphere)[![Build status](https://ci.appveyor.com/api/projects/status/466ymwhxwwaih6bj?svg=true)](https://ci.appveyor.com/project/sineflex/exosphere)
-Exosphere is aimed to be a user-friendly Home-Theater software similar to <a href="https://github.com/xbmc/xbmc">Kodi</a>
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+<center>Exosphere</center> 
+[![Build Status](https://travis-ci.org/sineflex/Exosphere.svg?branch=master)](https://travis-ci.org/sineflex/Exosphere)[![Build status](https://ci.appveyor.com/api/projects/status/466ymwhxwwaih6bj?svg=true)](https://ci.appveyor.com/project/sineflex/exosphere)
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)Exosphere is aimed to be a user-friendly Home-Theater software similar to <a href="https://github.com/xbmc/xbmc">Kodi</a>
 utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://electronjs.org">Electron</a> to build the UI.
 
 ## What's working
