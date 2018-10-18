@@ -1,6 +1,6 @@
 {
   "name": "Exosphere",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "",
   "main": "exacore.js",
   "scripts": {
@@ -17,8 +17,8 @@
     "tutorial",
     "demo"
   ],
-  "author": "ThePStar7",
-  "license": "AGPLv3",
+  "author": "sineflex",
+  "license": "MIT",
   "devDependencies": {
     "electron": "^2.0.6",
     "electron-builder": "^20.28.4"

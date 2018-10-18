@@ -9,6 +9,12 @@ const {dialog} = require('electron')
 
 const { } = require('electron')
 
+const API_KEYS = require('./keys');
+const API_URLS = {
+  TMDB: 'https://api.themoviedb.org/3',
+  ODB: 'https://api.odb.to',
+  TORRENT: 'http://api.apiumando.info/movie?cb=&quality=720p,1080p,3d&page=1'
+};
 
 const {Menu, shell} = require('electron')
 
@@ -40,7 +46,7 @@ let template = [{
           type: 'info',
           title: 'About Exosphere',
           buttons: ['OK'],
-          message: 'Exosphere\n Author: sineflex\n Used Libraries:\n Electron (https://electronjs.org)\n Node.js (https://nodejs.org/en/)\n \nInspired by: \nKodi (https://github.com/xbmc/xbmc)\nStreamBox (https://github.com/RedDuckss/StreamBox)\n  \n APIs used: \n ODB Movie Link Finder for the IMDB search (https://api.odb.to/) \n scr.cr for the search (https://scr.cr/) \n'
+          message: 'Exosphere v 1.0.0 \n Author: sineflex\n Used Libraries:\n Electron (https://electronjs.org)\n Node.js (https://nodejs.org/en/)\n \nInspired by: \nKodi (https://github.com/xbmc/xbmc)\nStreamBox (https://github.com/RedDuckss/StreamBox)\n  \n APIs used: \n Videospider for the IMDB and direct search (https://videospider.in) \n scr.cr for the search (https://scr.cr/) \n'
 
 
         }
@@ -333,3 +339,24 @@ ipcMain.on('open-file-dialog', (event) => {
   })
 })
 
+ipcMain.on('ready', async event => {
+  const response = await got(`${API_URLS.TMDB}/movie/now_playing?api_key=${pickRand(API_KEYS.TMDB)}`);
+  const movies = JSON.parse(response.body);
+
+  event.sender.send('media-list', movies);
+});
+
+ipcMain.on('search-media', async (event, search) => {
+  const query = search.query;
+  const page = (search.page ? search.page : 1);
+  const response = await got(`${API_URLS.TMDB}/search/movie?query=${query}&page=${page}&api_key=${pickRand(API_KEYS.TMDB)}`);
+  const movies = JSON.parse(response.body);
+
+  event.sender.send('media-list', movies);
+});
+
+ipcMain.on('find-stream-data', async (event, search) => {
+  const stream_data = {
+    streams: []
+  };
+});
