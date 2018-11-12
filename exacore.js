@@ -37,7 +37,11 @@ let template = [{
     click: () => {
       shell.openExternal('https://github.com/sineflex/Exosphere/releases/latest')
     }
-   
+}, {
+    label: 'Check for Update',
+    click: () => {
+      shell.openExternal('https://github.com/sineflex/Exosphere/releases/latest')
+    }
   }, {
     label: 'About',
     click: function (item, focusedWindow) {
@@ -46,7 +50,7 @@ let template = [{
           type: 'info',
           title: 'About Exosphere',
           buttons: ['OK'],
-          message: 'Exosphere v 2.0.0 \n Author: sineflex\n Used Libraries:\n Electron (https://electronjs.org)\n Node.js (https://nodejs.org/en/)\n \nInspired by: \nKodi (https://github.com/xbmc/xbmc)\nStreamBox (https://github.com/RedDuckss/StreamBox)\n  \n APIs used: \n Videospider for the IMDB and direct search (https://videospider.in) \n scr.cr for the search (https://scr.cr/) \n'
+          message: 'Exosphere v 2.1.0 \n Author: sineflex\n Used Libraries:\n Electron (https://electronjs.org)\n Node.js (https://nodejs.org/en/)\n \nInspired by: \nKodi (https://github.com/xbmc/xbmc)\nStreamBox (https://github.com/RedDuckss/StreamBox)\n  \n APIs used: \n Videospider for the IMDB and direct search (https://videospider.in) \n scr.cr for the search (https://scr.cr/) \n'
 
 
         }
@@ -167,7 +171,10 @@ label: 'Disclaimer',
 }]
 function addUpdateMenuItems (items, position) {
   if (process.mas) return
-require('update-electron-app')()
+require('update-electron-app')({
+  repo: 'sineflex/Exosphere',
+  updateInterval: '5 minutes'
+})
   const version = app.getVersion()
   let updateItems = [{
     label: `Version ${version}`,
@@ -295,7 +302,7 @@ win.on('page-title-updated', (evt) => {
   evt.preventDefault();
 });
     // und Laden der index.html der App.
-    win.loadFile('./memes/core.html')
+    win.loadFile('./exoview.html')
 
 
   

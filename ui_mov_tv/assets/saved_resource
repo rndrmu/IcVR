@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<script src="/cdn-cgi/apps/head/ere7JGiL4OGwLMcANfUAfIfOODE.js"></script><script>
+if ((navigator.userAgent.indexOf('OPR') >= 0))
+{
+    window.location.replace("https://scr.cr/indexm.php");
+}
+if ((navigator.userAgent.indexOf('Opera') >= 0))
+{
+    window.location.replace("https://scr.cr/indexm.php");
+}
+if ((navigator.userAgent.indexOf('Trident') >= 0))
+{
+    window.location.replace("https://scr.cr/indexm.php");
+}
+if ((navigator.userAgent.indexOf('SmartTV') >= 0))
+{
+    window.location.replace("https://scr.cr/indexm.php");
+}
+if ((navigator.userAgent.indexOf('SMART-TV') >= 0))
+{
+    window.location.replace("https://scr.cr/indexm.php");
+}
+if ((navigator.userAgent.indexOf('Edge') >= 0))
+{
+    window.location.replace("https://scr.cr/indexm.php");
+}
+</script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1">-->
+    <title>StreamCR - Watch Movies Online | Better than 123movies</title>
+<link rel="apple-touch-icon" href="/touchicon.png" />
+<link rel='shortcut icon' href='/favicon.png' type='image/x-icon' />
+<meta name="description" content="Watch movies and TV series online for free. Stream episodes of Game of Thrones, Breaking Bad, Stranger Things and more!" />
+<meta name="keywords" content="watch movies free online, watch series online, watch movies free, movies online free, watch free movies online, free movies online, watch movies online free, free movie streaming"/>
+<link rel="stylesheet" href="assets/css/stylesv2.css" type="text/css">
+<link rel="stylesheet" href="assets/css/slide.carousel.css" type="text/css">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+<link href="assets/css/styles.new.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/fonts/css/font-awesome.min.css">
+	
+<link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+<style>
+.NavbarContainer-center{
+margin-left: 30px !important;
+}
+</style>
+</head>
+
+<body data-gr-c-s-loaded="false" cz-shortcut-listen="false">
+<noscript>
+  <meta http-equiv="refresh" content="0; url=https://scr.cr/enable-js.html" />
+</noscript>
+    <div id="root">
+        <div>
+            <div class="desktop-app App">
+                <div class="App-container">
+                    <div class="App-cover NewCover HomeCover isCollapse" style="top: 0px; min-height: 0px;">
+						<div class="Navbar HomeNavbar">
+                            <div class="NavbarMenuButton">
+                                <div onclick="myFunction()" class="icon icon-menu"></div>
+								<div id="mmnu" class="NavbarDropdown" style="display:none;">
+								<div class="Searchbar"><form action="search.php" class="Searchbar-form"><input type="text" placeholder="Search" class="Searchbar-textInput" name="query" id="query" value="" style="height: 36px;"><button type="submit" class="Searchbar-submitInput"><img class="search" src="/assets/icon-search.94d41ef40ad4e47162607d90122c892f.svg"></button></form></div></div>
+                            </div>
+                            <div class="NavbarContainer-left">
+                                <div class="Navbar-logo-container">
+                                    <a class="Navbar-logo" href="/"><img style="width:auto; height:36px; " src="assets/img/Logo.png"></a>
+                                </div>
+                            </div>
+                           <div class="NavbarContainer-center">
+                                <div class="Searchbar">
+                                    <form action="search.php" class="Searchbar-form">
+                                        <input type="text" placeholder="Search" class="Searchbar-textInput" name="query" id="query" value="" style="height: 36px;">
+                                        <button type="submit" class="Searchbar-submitInput"><img class="search" src="assets/img/icon-search.94d41ef40ad4e47162607d90122c892f.svg"></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="InteractiveBackground" style="position: absolute;">
+                            <canvas width="1280" height="436"></canvas>
+                        </div>
+                        <!--<div class="Message welcome">Our new domain is SCR.cr!</div>-->
+                        
+ <!-- slider -->
+     <div id="slider">
+        <div class="swiper-container swiper-container-horizontal">
+            <div class="swiper-wrapper" style="transform: translate3d(-3066.67px, 0px, 0px); transition-duration: 0ms;">
+                                    <div class="swiper-slide swiper-slide-duplicate-next" data-swiper-slide-index="0" style="width: 383.333px;">
+                        <a href="info/26280-the-big-bang-theory-season-12" class="slide-link" style="background-image: url(&#39;https://scr.cr/SliderImg/BBT.jpg&#39;);" title="The Big Bang Theory">
+                            <div class="slide-caption">
+                                <div class="ssc-play"><i class="fa fa-play-circle"></i></div>
+                                <div class="ssc-title">The Big Bang Theory</div>
+                                <div class="d-rating">
+                                    <div class="dr-mark dr-10">
+                                        <div class="dr-show dr-stars"></div>
+                                    </div>
+                                    <div class="dr-hide dr-stars"></div>
+                                </div>
+                                <div class="ssc-desc">
+In the season premiere, Sheldon and Amy's honeymoon runs aground in New York; Penny and Leonard discover they are uncomfortably similar to Amy's parents; Koothrappali insults physicist Neil deGrasse Tyson and starts a Twitter war.
+								   </div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="swiper-slide" data-swiper-slide-index="1" style="width: 383.333px;">
+                        <a href="info/26286-this-is-us-season-3" class="slide-link" style="background-image: url(&#39;https://scr.cr/SliderImg/ThisIsUs.jpg&#39;);" title="This Is Us">
+                            <div class="slide-caption">
+                                <div class="ssc-play"><i class="fa fa-play-circle"></i></div>
+                                <div class="ssc-title">This Is Us</div>
+                                <div class="d-rating">
+                                    <div class="dr-mark dr-10">
+                                        <div class="dr-show dr-stars"></div>
+                                    </div>
+                                    <div class="dr-hide dr-stars"></div>
+                                </div>
+                                <div class="ssc-desc">
+In this season, Randall, Kate, and Kevin find themselves on new paths as they celebrate their 38th birthdays.
+									</div>
+                            </div>
+                        </a>
+                    </div>
+                                    <div class="swiper-slide" data-swiper-slide-index="2" style="width: 383.333px;">
+                        <a href="watch/26296-greys-anatomy-season-15" class="slide-link" style="background-image: url(&#39;https://scr.cr/SliderImg/Greys-Anatomy2.jpg&#39;);" title="Grey's Anatomy - Season 15">
+                            <div class="slide-caption">
+                                <div class="ssc-play"><i class="fa fa-play-circle"></i></div>
+                                <div class="ssc-title">Grey's Anatomy - Season 15</div>
+                                <div class="d-rating">
+                                    <div class="dr-mark dr-6">
+                                        <div class="dr-show dr-stars"></div>
+                                    </div>
+                                    <div class="dr-hide dr-stars"></div>
+                                </div>
+                                <div class="ssc-desc">
+In the season premiere, the doctors at Grey Sloan Memorial vie for a new position. Meredith is seemingly distracted and struggles to stay focused, and Maggie finds herself the keeper of a big secret while Amelia and Owen try to figure out their relationship. Meanwhile, Jo and Alex's honeymoon doesn't go exactly as planned.									</div>
+                            </div>
+                        </a>
+                    </div>
+                                    
+                                
+                                    
+                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-next" data-swiper-slide-index="0" style="width: 383.333px;">
+                        <a href="info/26280-the-big-bang-theory-season-12" class="slide-link" style="background-image: url(&#39;https://scr.cr/SliderImg/BBT.jpg&#39;);" title="The Big Bang Theory">
+                            <div class="slide-caption">
+                                <div class="ssc-play"><i class="fa fa-play-circle"></i></div>
+                                <div class="ssc-title">The Big Bang Theory</div>
+                                <div class="d-rating">
+                                    <div class="dr-mark dr-10">
+                                        <div class="dr-show dr-stars"></div>
+                                    </div>
+                                    <div class="dr-hide dr-stars"></div>
+                                </div>
+                                <div class="ssc-desc">
+In the season premiere, Sheldon and Amy's honeymoon runs aground in New York; Penny and Leonard discover they are uncomfortably similar to Amy's parents; Koothrappali insults physicist Neil deGrasse Tyson and starts a Twitter war.
+								   </div>
+                            </div>
+                        </a>
+                    </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" style="width: 383.333px;">
+                        <a href="info/26286-this-is-us-season-3" class="slide-link" style="background-image: url(&#39;https://scr.cr/SliderImg/ThisIsUs.jpg&#39;);" title="This Is Us">
+                            <div class="slide-caption">
+                                <div class="ssc-play"><i class="fa fa-play-circle"></i></div>
+                                <div class="ssc-title">This Is Us</div>
+                                <div class="d-rating">
+                                    <div class="dr-mark dr-10">
+                                        <div class="dr-show dr-stars"></div>
+                                    </div>
+                                    <div class="dr-hide dr-stars"></div>
+                                </div>
+                                <div class="ssc-desc">
+In this season, Randall, Kate, and Kevin find themselves on new paths as they celebrate their 38th birthdays.
+									</div>
+                            </div>
+                        </a>
+                    </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 383.333px;">
+                        <a href="watch/26296-greys-anatomy-season-15" class="slide-link" style="background-image: url(&#39;https://scr.cr/SliderImg/Greys-Anatomy2.jpg&#39;);" title="Grey's Anatomy - Season 15">
+                            <div class="slide-caption">
+                                <div class="ssc-play"><i class="fa fa-play-circle"></i></div>
+                                <div class="ssc-title">Grey's Anatomy - Season 15</div>
+                                <div class="d-rating">
+                                    <div class="dr-mark dr-6">
+                                        <div class="dr-show dr-stars"></div>
+                                    </div>
+                                    <div class="dr-hide dr-stars"></div>
+                                </div>
+                                <div class="ssc-desc">
+In the season premiere, the doctors at Grey Sloan Memorial vie for a new position. Meredith is seemingly distracted and struggles to stay focused, and Maggie finds herself the keeper of a big secret while Amelia and Owen try to figure out their relationship. Meanwhile, Jo and Alex's honeymoon doesn't go exactly as planned.									</div>
+                            </div>
+                        </a>
+                    </div></div>
+            
+            <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span></div>
+            <div class="slider-btn swiper-button-next"><i class="fa fa-angle-right"></i></div>
+            <div class="slider-btn swiper-button-prev"><i class="fa fa-angle-left"></i></div>
+        </div>
+    </div>
+    <!--/slider -->
+ <!--DIVIDER FOR NEW CONTENT -->
+ 
+                        <div class="CoverChangeGallery row" style="width: 89%;"><img class="GoUp" src="#">
+                            <div class="NewCover-change-sort"><span class="NewCover-change-sort-wrapper section">
+								<div class="dropdown Dropdown--primary">
+									
+  <div class="dropdown-toggle Dropdown undefined Dropdown--primary Dropdown--upper Dropdown-title" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span>Suggestion</span>
+    <!--<span class="caret"></span>-->
+  </div>
+									
+</div>
+                        </span>
+            </div>
+            
+        </div>
+				<div id="main" class="bg-e">
+    <div class="container">
+        <div class="main-content">		
+                    <div id="top-hot" class="movies-list movies-list-full tab-pane in fade active">
+
+<div class='ml-item'>
+            <a href='/watch/26689-king-of-thieves' class='ml-mask' data-url='ajax/movie_info/26689' data-hasqtip='193' oldtitle='King of Thieves' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>CAM</span>
+                                <img class='thumb mli-thumb lazy' title='King of Thieves' alt='King of Thieves' data-original='https://photos.embed.is/2018/10/27/poster/427d016033e6eb141fbb9daf33d0c681-king-of-thieves.jpg' src='https://photos.embed.is/2018/10/27/poster/427d016033e6eb141fbb9daf33d0c681-king-of-thieves.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>King of Thieves</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26631-night-school' class='ml-mask' data-url='ajax/movie_info/26631' data-hasqtip='193' oldtitle='Night School' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>CAM</span>
+                                <img class='thumb mli-thumb lazy' title='Night School' alt='Night School' data-original='https://photos.embed.is/2018/10/21/poster/2a881eab5879452fe6d35e8ab72189ab-night-school.jpg' src='https://photos.embed.is/2018/10/21/poster/2a881eab5879452fe6d35e8ab72189ab-night-school.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Night School</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26630-halloween' class='ml-mask' data-url='ajax/movie_info/26630' data-hasqtip='193' oldtitle='Halloween' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>CAM</span>
+                                <img class='thumb mli-thumb lazy' title='Halloween' alt='Halloween' data-original='https://photos.embed.is/2018/10/20/poster/4f8f8694d41efcb86151a49a782556fa-halloween.jpg' src='https://photos.embed.is/2018/10/20/poster/4f8f8694d41efcb86151a49a782556fa-halloween.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Halloween</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26524-bad-times-at-the-el-royale' class='ml-mask' data-url='ajax/movie_info/26524' data-hasqtip='193' oldtitle='Bad Times at the El Royale' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>CAM</span>
+                                <img class='thumb mli-thumb lazy' title='Bad Times at the El Royale' alt='Bad Times at the El Royale' data-original='https://photos.embed.is/2018/10/14/poster/c6d39c5b6378c6451f22d8972a67b9d2-bad-times-at-the-el-royale.jpg' src='https://photos.embed.is/2018/10/14/poster/c6d39c5b6378c6451f22d8972a67b9d2-bad-times-at-the-el-royale.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Bad Times at the El Royale</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26523-first-man' class='ml-mask' data-url='ajax/movie_info/26523' data-hasqtip='193' oldtitle='First Man' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>CAM</span>
+                                <img class='thumb mli-thumb lazy' title='First Man' alt='First Man' data-original='https://photos.embed.is/2018/10/14/poster/ebf8c1b27e5a3fcb218b11fb02748d6c-first-man.jpg' src='https://photos.embed.is/2018/10/14/poster/ebf8c1b27e5a3fcb218b11fb02748d6c-first-man.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>First Man</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26465-a-star-is-born' class='ml-mask' data-url='ajax/movie_info/26465' data-hasqtip='193' oldtitle='A Star Is Born' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>CAM</span>
+                                <img class='thumb mli-thumb lazy' title='A Star Is Born' alt='A Star Is Born' data-original='https://photos.embed.is/2018/10/09/poster/4e510499f7493ce3da8be8fdec5cd276-a-star-is-born.jpg' src='https://photos.embed.is/2018/10/09/poster/4e510499f7493ce3da8be8fdec5cd276-a-star-is-born.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>A Star Is Born</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26447-venom' class='ml-mask' data-url='ajax/movie_info/26447' data-hasqtip='193' oldtitle='Venom' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>CAM</span>
+                                <img class='thumb mli-thumb lazy' title='Venom' alt='Venom' data-original='https://photos.embed.is/2018/10/08/poster/b3a643895c1eeaa04b08f9a52f8fbf9d-venom.jpg' src='https://photos.embed.is/2018/10/08/poster/b3a643895c1eeaa04b08f9a52f8fbf9d-venom.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Venom</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26342-smallfoot' class='ml-mask' data-url='ajax/movie_info/26342' data-hasqtip='193' oldtitle='Smallfoot' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>CAM</span>
+                                <img class='thumb mli-thumb lazy' title='Smallfoot' alt='Smallfoot' data-original='https://photos.embed.is/2018/09/30/poster/cb017f99c3c03ee981a8d00b2061d72d-smallfoot.jpg' src='https://photos.embed.is/2018/09/30/poster/cb017f99c3c03ee981a8d00b2061d72d-smallfoot.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Smallfoot</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26240-a-simple-favor' class='ml-mask' data-url='ajax/movie_info/26240' data-hasqtip='193' oldtitle='A Simple Favor' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>CAM</span>
+                                <img class='thumb mli-thumb lazy' title='A Simple Favor' alt='A Simple Favor' data-original='https://photos.embed.is/2018/09/22/poster/f27b2423c629030904885bd78e6feb20-a-simple-favor.jpg' src='https://photos.embed.is/2018/09/22/poster/f27b2423c629030904885bd78e6feb20-a-simple-favor.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>A Simple Favor</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26149-the-predator' class='ml-mask' data-url='ajax/movie_info/26149' data-hasqtip='193' oldtitle='The Predator' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>CAM</span>
+                                <img class='thumb mli-thumb lazy' title='The Predator' alt='The Predator' data-original='https://photos.embed.is/2018/09/14/poster/cb05d20194fbfef3506fcf0d05716141-the-predator.jpg' src='https://photos.embed.is/2018/09/14/poster/cb05d20194fbfef3506fcf0d05716141-the-predator.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>The Predator</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26078-the-nun' class='ml-mask' data-url='ajax/movie_info/26078' data-hasqtip='193' oldtitle='The Nun' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>CAM</span>
+                                <img class='thumb mli-thumb lazy' title='The Nun' alt='The Nun' data-original='https://photos.embed.is/2018/09/07/poster/23be31ccbb9bc6c8daf6482b3338e011-the-nun.jpg' src='https://photos.embed.is/2018/09/07/poster/23be31ccbb9bc6c8daf6482b3338e011-the-nun.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>The Nun</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26077-blackkklansman' class='ml-mask' data-url='ajax/movie_info/26077' data-hasqtip='193' oldtitle='BlacKkKlansman' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='BlacKkKlansman' alt='BlacKkKlansman' data-original='https://photos.embed.is/2018/09/07/poster/bfb16986773dd4ac0d045285a20f2506-blackkklansman.jpg' src='https://photos.embed.is/2018/09/07/poster/bfb16986773dd4ac0d045285a20f2506-blackkklansman.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>BlacKkKlansman</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/25946-crazy-rich-asians' class='ml-mask' data-url='ajax/movie_info/25946' data-hasqtip='193' oldtitle='Crazy Rich Asians' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>CAM</span>
+                                <img class='thumb mli-thumb lazy' title='Crazy Rich Asians' alt='Crazy Rich Asians' data-original='https://photos.embed.is/2018/08/20/poster/25a74a69dd012fc536195bd66c3bb71e-crazy-rich-asians.jpg' src='https://photos.embed.is/2018/08/20/poster/25a74a69dd012fc536195bd66c3bb71e-crazy-rich-asians.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Crazy Rich Asians</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/25933-alpha' class='ml-mask' data-url='ajax/movie_info/25933' data-hasqtip='193' oldtitle='Alpha' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Alpha' alt='Alpha' data-original='https://photos.embed.is/2018/08/19/poster/247d07d9d706beaa7734880a1c2d8c3b-alpha.jpg' src='https://photos.embed.is/2018/08/19/poster/247d07d9d706beaa7734880a1c2d8c3b-alpha.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Alpha</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/25932-to-all-the-boys-ive-loved-before' class='ml-mask' data-url='ajax/movie_info/25932' data-hasqtip='193' oldtitle='To All the Boys I've Loved Before' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='To All the Boys I've Loved Before' alt='To All the Boys I've Loved Before' data-original='https://photos.embed.is/2018/08/18/poster/df80d4702b41a823e031f059bccd560b-to-all-the-boys-ive-loved-before.jpg' src='https://photos.embed.is/2018/08/18/poster/df80d4702b41a823e031f059bccd560b-to-all-the-boys-ive-loved-before.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>To All the Boys I've Loved Before</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/25846-the-spy-who-dumped-me' class='ml-mask' data-url='ajax/movie_info/25846' data-hasqtip='193' oldtitle='The Spy Who Dumped Me' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='The Spy Who Dumped Me' alt='The Spy Who Dumped Me' data-original='https://photos.embed.is/2018/08/11/poster/8200167db7e5f93975132659125ff973-the-spy-who-dumped-me.jpg' src='https://photos.embed.is/2018/08/11/poster/8200167db7e5f93975132659125ff973-the-spy-who-dumped-me.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>The Spy Who Dumped Me</h2>
+        </span>
+            </a>
+        </div>		
+                    </div>
+		</div>
+					</div>
+						</div>
+											
+    <!--DIVIDER FOR NEW CONTENT -->
+                        <div class="CoverChangeGallery row" style="width: 89%;"><img class="GoUp" src="#">
+                            <div class="NewCover-change-sort"><span class="NewCover-change-sort-wrapper section">
+								<div class="dropdown Dropdown--primary">
+									
+  <div class="dropdown-toggle Dropdown undefined Dropdown--primary Dropdown--upper Dropdown-title" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span>Latest Movies</span>
+    <!--<span class="caret"></span>-->
+  </div>
+									
+</div>
+                        </span>
+            </div>
+            
+        </div>
+				<div id="main" class="bg-e">
+    <div class="container">
+        <div class="main-content">		
+					<!-- Movies--->
+                    <div id="top-hot" class="movies-list movies-list-full tab-pane in fade active">
+
+<div class='ml-item'>
+            <a href='/watch/26699-white-orchid' class='ml-mask' data-url='ajax/movie_info/26699' data-hasqtip='193' oldtitle='White Orchid' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='White Orchid' alt='White Orchid' data-original='https://photos.embed.is/2018/10/27/poster/bfa5944f537882fc1495bca974903571-white-orchid.jpg' src='https://photos.embed.is/2018/10/27/poster/bfa5944f537882fc1495bca974903571-white-orchid.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>White Orchid</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26698-welcome-home' class='ml-mask' data-url='ajax/movie_info/26698' data-hasqtip='193' oldtitle='Welcome Home' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Welcome Home' alt='Welcome Home' data-original='https://photos.embed.is/2018/10/27/poster/d92b81746443038b689513cb82114a20-welcome-home.jpg' src='https://photos.embed.is/2018/10/27/poster/d92b81746443038b689513cb82114a20-welcome-home.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Welcome Home</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26697-the-witch-in-the-window' class='ml-mask' data-url='ajax/movie_info/26697' data-hasqtip='193' oldtitle='The Witch in the Window' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='The Witch in the Window' alt='The Witch in the Window' data-original='https://photos.embed.is/2018/10/27/poster/ad67b4a5b8e47f67a86400cdf80301f9-the-witch-in-the-window.jpg' src='https://photos.embed.is/2018/10/27/poster/ad67b4a5b8e47f67a86400cdf80301f9-the-witch-in-the-window.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>The Witch in the Window</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26696-the-rack-pack' class='ml-mask' data-url='ajax/movie_info/26696' data-hasqtip='193' oldtitle='The Rack Pack' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>SD</span>
+                                <img class='thumb mli-thumb lazy' title='The Rack Pack' alt='The Rack Pack' data-original='https://photos.embed.is/2018/10/27/poster/3a93caf8feeed2e3645a58602ce5cf91-the-rack-pack.jpg' src='https://photos.embed.is/2018/10/27/poster/3a93caf8feeed2e3645a58602ce5cf91-the-rack-pack.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>The Rack Pack</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26695-the-joke-thief' class='ml-mask' data-url='ajax/movie_info/26695' data-hasqtip='193' oldtitle='The Joke Thief' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='The Joke Thief' alt='The Joke Thief' data-original='https://photos.embed.is/2018/10/27/poster/deed0fb47a6841fff42c70dbbfbd4ea5-the-joke-thief.jpg' src='https://photos.embed.is/2018/10/27/poster/deed0fb47a6841fff42c70dbbfbd4ea5-the-joke-thief.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>The Joke Thief</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26694-the-griddle-house' class='ml-mask' data-url='ajax/movie_info/26694' data-hasqtip='193' oldtitle='The Griddle House' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='The Griddle House' alt='The Griddle House' data-original='https://photos.embed.is/2018/10/27/poster/076c9837ae41911c8c26d3d994b0be41-the-griddle-house.jpg' src='https://photos.embed.is/2018/10/27/poster/076c9837ae41911c8c26d3d994b0be41-the-griddle-house.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>The Griddle House</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26693-solis' class='ml-mask' data-url='ajax/movie_info/26693' data-hasqtip='193' oldtitle='Solis' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Solis' alt='Solis' data-original='https://photos.embed.is/2018/10/27/poster/e21e1dee1a70a867bd36ea4bb6baf51e-solis.jpg' src='https://photos.embed.is/2018/10/27/poster/e21e1dee1a70a867bd36ea4bb6baf51e-solis.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Solis</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26692-sink' class='ml-mask' data-url='ajax/movie_info/26692' data-hasqtip='193' oldtitle='Sink' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>SD</span>
+                                <img class='thumb mli-thumb lazy' title='Sink' alt='Sink' data-original='https://photos.embed.is/2018/10/27/poster/2c5780e0513196c2f912c520ccf34c17-sink.jpg' src='https://photos.embed.is/2018/10/27/poster/2c5780e0513196c2f912c520ccf34c17-sink.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Sink</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26691-shirkers' class='ml-mask' data-url='ajax/movie_info/26691' data-hasqtip='193' oldtitle='Shirkers' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Shirkers' alt='Shirkers' data-original='https://photos.embed.is/2018/10/27/poster/007cf3f182f7d8fb95e9fd8e0fe4d761-shirkers.jpg' src='https://photos.embed.is/2018/10/27/poster/007cf3f182f7d8fb95e9fd8e0fe4d761-shirkers.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Shirkers</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26690-mr-malevolent' class='ml-mask' data-url='ajax/movie_info/26690' data-hasqtip='193' oldtitle='Mr. Malevolent' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Mr. Malevolent' alt='Mr. Malevolent' data-original='https://photos.embed.is/2018/10/27/poster/daeca0f0256756a7671e61a3c60c4662-mr-malevolent.jpg' src='https://photos.embed.is/2018/10/27/poster/daeca0f0256756a7671e61a3c60c4662-mr-malevolent.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Mr. Malevolent</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26689-king-of-thieves' class='ml-mask' data-url='ajax/movie_info/26689' data-hasqtip='193' oldtitle='King of Thieves' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>CAM</span>
+                                <img class='thumb mli-thumb lazy' title='King of Thieves' alt='King of Thieves' data-original='https://photos.embed.is/2018/10/27/poster/427d016033e6eb141fbb9daf33d0c681-king-of-thieves.jpg' src='https://photos.embed.is/2018/10/27/poster/427d016033e6eb141fbb9daf33d0c681-king-of-thieves.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>King of Thieves</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26688-killer-kate!' class='ml-mask' data-url='ajax/movie_info/26688' data-hasqtip='193' oldtitle='Killer Kate!' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Killer Kate!' alt='Killer Kate!' data-original='https://photos.embed.is/2018/10/27/poster/09ee977dc8af6511f8d5ce95903db7af-killer-kate.jpg' src='https://photos.embed.is/2018/10/27/poster/09ee977dc8af6511f8d5ce95903db7af-killer-kate.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Killer Kate!</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26687-hide-and-go-seek' class='ml-mask' data-url='ajax/movie_info/26687' data-hasqtip='193' oldtitle='Hide and Go Seek' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>SD</span>
+                                <img class='thumb mli-thumb lazy' title='Hide and Go Seek' alt='Hide and Go Seek' data-original='https://photos.embed.is/2018/10/27/poster/9c506909e31d20b67c3602adb8bc3acb-hide-and-go-seek.jpg' src='https://photos.embed.is/2018/10/27/poster/9c506909e31d20b67c3602adb8bc3acb-hide-and-go-seek.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Hide and Go Seek</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26686-glass-jaw' class='ml-mask' data-url='ajax/movie_info/26686' data-hasqtip='193' oldtitle='Glass Jaw' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Glass Jaw' alt='Glass Jaw' data-original='https://photos.embed.is/2018/10/27/poster/586bf8a35a6ba04d9be15e6be6e12f5f-glass-jaw.jpg' src='https://photos.embed.is/2018/10/27/poster/586bf8a35a6ba04d9be15e6be6e12f5f-glass-jaw.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Glass Jaw</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26685-dont-go' class='ml-mask' data-url='ajax/movie_info/26685' data-hasqtip='193' oldtitle='Don't Go' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Don't Go' alt='Don't Go' data-original='https://photos.embed.is/2018/10/27/poster/4af7ab44c830332acf3b0f3961ae0aed-dont-go.jpg' src='https://photos.embed.is/2018/10/27/poster/4af7ab44c830332acf3b0f3961ae0aed-dont-go.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Don't Go</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26684-been-so-long' class='ml-mask' data-url='ajax/movie_info/26684' data-hasqtip='193' oldtitle='Been So Long' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Been So Long' alt='Been So Long' data-original='https://photos.embed.is/2018/10/27/poster/bd83c758ca83354abdc4865e594f704d-been-so-long.jpg' src='https://photos.embed.is/2018/10/27/poster/bd83c758ca83354abdc4865e594f704d-been-so-long.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Been So Long</h2>
+        </span>
+            </a>
+        </div>		
+                    </div>
+		</div>
+					</div>
+						</div>
+						
+<!-- DIVIDER FOR NEW CONTENT -->
+
+<div class="CoverChangeGallery row" style="width: 89%;"><img class="GoUp" src="#">
+                            <div class="NewCover-change-sort"><span class="NewCover-change-sort-wrapper section">
+								<div class="dropdown Dropdown--primary">
+									
+  <div class="dropdown-toggle Dropdown undefined Dropdown--primary Dropdown--upper Dropdown-title" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    <span>Latest TV-Series</span>
+    <!--<span class="caret"></span>-->
+  </div>
+									
+</div>
+                        </span>
+            </div>
+            
+        </div>
+				<div id="main" class="bg-e">
+    <div class="container">
+        <div class="main-content">		
+                    <div id="top-hot" class="movies-list movies-list-full tab-pane in fade active">
+
+<div class='ml-item'>
+            <a href='/watch/26036-the-x-factor-uk-season-15' class='ml-mask' data-url='ajax/movie_info/26036' data-hasqtip='193' oldtitle='The X Factor UK - Season 15' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='The X Factor UK - Season 15' alt='The X Factor UK - Season 15' data-original='https://amp.cloudflare.com/i/s/dummyimage.com/375x500/000000/ffffff.jpg&text=The X Factor UK - Season 15' src='https://amp.cloudflare.com/i/s/dummyimage.com/375x500/000000/ffffff.jpg&text=The X Factor UK - Season 15' style='display: block;'>
+                <span class='mli-info'>
+            <h2>The X Factor UK - Season 15</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26516-bad-blood-season-2' class='ml-mask' data-url='ajax/movie_info/26516' data-hasqtip='193' oldtitle='Bad Blood - Season 2' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Bad Blood - Season 2' alt='Bad Blood - Season 2' data-original='https://photos.embed.is/2018/10/13/poster/eebde262278c2b0184377b0e9b500e78-bad-blood-season-2.jpg' src='https://photos.embed.is/2018/10/13/poster/eebde262278c2b0184377b0e9b500e78-bad-blood-season-2.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Bad Blood - Season 2</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/25848-casualty-season-33' class='ml-mask' data-url='ajax/movie_info/25848' data-hasqtip='193' oldtitle='Casualty - Season 33' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Casualty - Season 33' alt='Casualty - Season 33' data-original='https://photos.embed.is/2018/08/12/poster/2a0afa2eb4d67659b422920cb3a73c53-casualty-season-33.jpg' src='https://photos.embed.is/2018/08/12/poster/2a0afa2eb4d67659b422920cb3a73c53-casualty-season-33.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Casualty - Season 33</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26701-castlevania-season-2' class='ml-mask' data-url='ajax/movie_info/26701' data-hasqtip='193' oldtitle='Castlevania - Season 2' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Castlevania - Season 2' alt='Castlevania - Season 2' data-original='https://photos.embed.is/2018/10/27/poster/996e276b88db66a4753b50fad4f513e5-castlevania-season-2.jpg' src='https://photos.embed.is/2018/10/27/poster/996e276b88db66a4753b50fad4f513e5-castlevania-season-2.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Castlevania - Season 2</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26655-ducktales-season-2' class='ml-mask' data-url='ajax/movie_info/26655' data-hasqtip='193' oldtitle='DuckTales - Season 2' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='DuckTales - Season 2' alt='DuckTales - Season 2' data-original='https://photos.embed.is/2018/10/23/poster/7d8b4f52345fe2b6822c2dd78db914d0-ducktales-season-2.jpg' src='https://photos.embed.is/2018/10/23/poster/7d8b4f52345fe2b6822c2dd78db914d0-ducktales-season-2.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>DuckTales - Season 2</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26514-dynasty-season-2' class='ml-mask' data-url='ajax/movie_info/26514' data-hasqtip='193' oldtitle='Dynasty - Season 2' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Dynasty - Season 2' alt='Dynasty - Season 2' data-original='https://photos.embed.is/2018/10/13/poster/de83b7100ad0df5d7dc8b6f4a7663f3d-dynasty-season-2.jpg' src='https://photos.embed.is/2018/10/13/poster/de83b7100ad0df5d7dc8b6f4a7663f3d-dynasty-season-2.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Dynasty - Season 2</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26391-dragons-den-ca-season-13' class='ml-mask' data-url='ajax/movie_info/26391' data-hasqtip='193' oldtitle='Dragons Den (CA) - Season 13' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Dragons Den (CA) - Season 13' alt='Dragons Den (CA) - Season 13' data-original='https://photos.embed.is/2018/10/03/poster/ba78dbeb7e45ad3e459b99184fd7c741-dragons-den-ca-season-13.jpg' src='https://photos.embed.is/2018/10/03/poster/ba78dbeb7e45ad3e459b99184fd7c741-dragons-den-ca-season-13.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Dragons Den (CA) - Season 13</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26416-z-nation-season-5' class='ml-mask' data-url='ajax/movie_info/26416' data-hasqtip='193' oldtitle='Z Nation - Season 5' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Z Nation - Season 5' alt='Z Nation - Season 5' data-original='https://photos.embed.is/2018/10/05/poster/ce566c0dc1918df81bf6c2bc3e98e7e6-z-nation-season-5.jpg' src='https://photos.embed.is/2018/10/05/poster/ce566c0dc1918df81bf6c2bc3e98e7e6-z-nation-season-5.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Z Nation - Season 5</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26418-van-helsing-season-3' class='ml-mask' data-url='ajax/movie_info/26418' data-hasqtip='193' oldtitle='Van Helsing - Season 3' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Van Helsing - Season 3' alt='Van Helsing - Season 3' data-original='https://photos.embed.is/2018/10/05/poster/b0134a5f65de16f89ca2f9065d1cc1d6-van-helsing-season-3.jpg' src='https://photos.embed.is/2018/10/05/poster/b0134a5f65de16f89ca2f9065d1cc1d6-van-helsing-season-3.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Van Helsing - Season 3</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26338-macgyver-2016-season-3' class='ml-mask' data-url='ajax/movie_info/26338' data-hasqtip='193' oldtitle='MacGyver (2016) - Season 3' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='MacGyver (2016) - Season 3' alt='MacGyver (2016) - Season 3' data-original='https://photos.embed.is/2018/09/29/poster/2670ac2f0a6db602f836e36bcd454c53-macgyver-2016-season-3.jpg' src='https://photos.embed.is/2018/09/29/poster/2670ac2f0a6db602f836e36bcd454c53-macgyver-2016-season-3.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>MacGyver (2016) - Season 3</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26336-hawaii-five-0-2010-season-9' class='ml-mask' data-url='ajax/movie_info/26336' data-hasqtip='193' oldtitle='Hawaii Five-0 (2010) - Season 9' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Hawaii Five-0 (2010) - Season 9' alt='Hawaii Five-0 (2010) - Season 9' data-original='https://photos.embed.is/2018/09/29/poster/9063c561b504c9b3da61df3f527a8e0a-hawaii-five-0-2010-season-9.jpg' src='https://photos.embed.is/2018/09/29/poster/9063c561b504c9b3da61df3f527a8e0a-hawaii-five-0-2010-season-9.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Hawaii Five-0 (2010) - Season 9</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26517-crazy-ex-girlfriend-season-4' class='ml-mask' data-url='ajax/movie_info/26517' data-hasqtip='193' oldtitle='Crazy Ex-Girlfriend - Season 4' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Crazy Ex-Girlfriend - Season 4' alt='Crazy Ex-Girlfriend - Season 4' data-original='https://photos.embed.is/2018/10/13/poster/40501698c03c3c155340c74bfdb905da-crazy-ex-girlfriend-season-4.jpg' src='https://photos.embed.is/2018/10/13/poster/40501698c03c3c155340c74bfdb905da-crazy-ex-girlfriend-season-4.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Crazy Ex-Girlfriend - Season 4</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26334-blue-bloods-season-9' class='ml-mask' data-url='ajax/movie_info/26334' data-hasqtip='193' oldtitle='Blue Bloods - Season 9' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Blue Bloods - Season 9' alt='Blue Bloods - Season 9' data-original='https://photos.embed.is/2018/09/29/poster/f677e923bf2eae359a555100a66b19b6-blue-bloods-season-9.jpg' src='https://photos.embed.is/2018/09/29/poster/f677e923bf2eae359a555100a66b19b6-blue-bloods-season-9.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Blue Bloods - Season 9</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26518-blindspot-season-4' class='ml-mask' data-url='ajax/movie_info/26518' data-hasqtip='193' oldtitle='Blindspot - Season 4' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Blindspot - Season 4' alt='Blindspot - Season 4' data-original='https://photos.embed.is/2018/10/13/poster/a6144484fc917d71c0de7675d329700a-blindspot-season-4.jpg' src='https://photos.embed.is/2018/10/13/poster/a6144484fc917d71c0de7675d329700a-blindspot-season-4.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Blindspot - Season 4</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/23407-the-paynes-season-01' class='ml-mask' data-url='ajax/movie_info/23407' data-hasqtip='193' oldtitle='The Paynes - Season 01' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='The Paynes - Season 01' alt='The Paynes - Season 01' data-original='https://photos.embed.is/2018/01/18/poster/28b74536d7c44f42a77f06057709496c-the-paynes-season-01.jpg' src='https://photos.embed.is/2018/01/18/poster/28b74536d7c44f42a77f06057709496c-the-paynes-season-01.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>The Paynes - Season 01</h2>
+        </span>
+            </a>
+        </div><div class='ml-item'>
+            <a href='/watch/26098-taskmaster-season-7' class='ml-mask' data-url='ajax/movie_info/26098' data-hasqtip='193' oldtitle='Taskmaster - Season 7' title='' aria-describedby='qtip-193'>
+                                    <span class='mli-quality'>HD</span>
+                                <img class='thumb mli-thumb lazy' title='Taskmaster - Season 7' alt='Taskmaster - Season 7' data-original='https://photos.embed.is/2018/09/07/poster/04177dff90e7e02f92ecba7dd037e77a-taskmaster-season-7.jpg' src='https://photos.embed.is/2018/09/07/poster/04177dff90e7e02f92ecba7dd037e77a-taskmaster-season-7.jpg' style='display: block;'>
+                <span class='mli-info'>
+            <h2>Taskmaster - Season 7</h2>
+        </span>
+            </a>
+        </div>		
+
+  
+
+
+
+ 
+
+    
+   
+
+
+   
+
+                        <div class="clearfix"></div>
+                    </div>
+		</div>
+					</div>
+						</div>
+
+
+    </div>
+					
+
+    <div>
+        <div class="Footer Footer-slim">
+            <ul class="Footer-navbar">
+                <li>© 2018 StreamCR</li>
+                <!--<li><a href="#">About</a></li>-->
+				<li><a data-modal="modal-12" class="md-trigger" href="#"><span class="Button-label">Donate</span></a></li>
+                <!--<li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Ad Choices</a></li>
+                <li><a href="#">Rules</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Careers</a></li>-->
+            </ul>
+            <!--<div class="Dropdown center">
+                <div class="Dropdown-title"><span> </span><img src="assets/img/icon-points.5867bfb88971853dcfdf49b18f8455b9.svg" class="Dropdown-icon icon-points"></div>
+                <div class="Dropdown-menu">
+                    <div class="Dropdown-triangle"></div>
+                    <div class="Dropdown-list">
+                        <div class="Dropdown-option"><a href="#">Store</a></div>
+                        <div class="Dropdown-option"><a href="#">API</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="Footer-slim-app"><a href="#">BETA</a></div>-->
+        </div>
+        <div class="Footer Footer-slim Footer-measure">
+            <ul class="Footer-navbar Footer-navbar-dimensions">
+                <li>© 2018 StreamCR</li>
+                <!--<li><a href="#">About</a></li>-->
+				<li><a data-modal="modal-12" class="md-trigger" href="#"><span class="Button-label">Donate</span></a></li>
+                <!--<li><a href="#">Press</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Advertise</a></li>
+                <li><a href="#">Ad Choices</a></li>
+                <li><a href="#">Rules</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">API</a></li>-->
+            </ul>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+	
+<script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/detectmobilebrowser.js"></script>
+	<!--<script type="text/javascript" src="assets/js/jquery.cluetip.min.js"></script>-->
+	<script type="text/javascript" src="assets/js/main.min.js"></script>
+	<script type="text/javascript" src="assets/js/slide.carousel.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<div class="md-modal md-effect-12" id="modal-12">
+			
+		<!--<div class="md-content container">
+			
+			
+				<nav>
+					<a href="#">HOME</a>
+					<a href="#">ABOUT</a>
+					<a href="#">CONTACT</a>
+				</nav>
+				<div>
+					<ul>
+						<li><strong>HEADER</strong> <br> Text</li>
+						<hr>
+						<li><strong>HEADER</strong> <br> Text</li>
+						<hr>
+						<li><strong>HEADER</strong> <br> Text</li>
+					</ul>
+				</div>
+			</div>-->
+			
+			<div class="md-content container">
+			
+			
+			
+				<div>
+					<ul>
+					<li><strong>Donate via Bitcoin</strong></li>
+<img src="https://blockchain.info/qr?data=1Azm6NJA6z9KQBzrrhgH4ir6PVdctMSGwq&size=125" alt="BTC" height="125" width="125">
+<font size="2">1Azm6NJA6z9KQBzrrhgH4ir6PVdctMSGwq</font>
+						<!--<li><strong>Donate via Bitcoin</strong> <br> 1Azm6NJA6z9KQBzrrhgH4ir6PVdctMSGwq (note: please send BTC only)</li>-->
+						<li><strong>We only accept cryptocurrencies.</strong> <br> Tweet us @Stream_CR for our altcoins address.</li>
+												<!--<li><strong>Contact us</strong> <br> @Stream_CR on Twitter</li>-->
+					</ul>
+				</div>
+			</div>
+			
+			
+		</div>
+		
+								
+		<!-- /container -->
+		<div class="md-overlay"><i class="md-close fa fa-times"></i></div><!-- the overlay element -->
+		<script src="assets/js/classie.js"></script>
+		<script src="assets/js/modalEffects.js"></script>
+	<script>function myFunction() {
+    var x = document.getElementById("mmnu");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}</script>
+</body>
+
+</html>
