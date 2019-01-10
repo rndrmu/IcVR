@@ -1,34 +1,14 @@
 const electron = require('electron')
 
 const {app, document, mainWindow, ipcMain, BrowserWindow, setTitle, title} = require('electron')
-  // Keep a global reference of the window object, if you don't, the window will
-  // be closed automatically when the JavaScript object is garbage collected.
+
   let win
-  
+
 const {dialog} = require('electron')
 
 const { } = require('electron')
 
-const API_KEYS = require('./keys');
-const API_URLS = {
-  TMDB: 'https://api.themoviedb.org/3',
-  ODB: 'https://api.odb.to',
-  TORRENT: 'http://api.apiumando.info/movie?cb=&quality=720p,1080p,3d&page=1'
-};
-
 const {Menu, shell} = require('electron')
-
-ipcMain.on('save-dialog', (event) => {
-  const options = {
-    title: 'Save config',
-    filters: [
-      { name: 'Images', extensions: ['jpg', 'png', 'gif'] }
-    ]
-  }
-  dialog.showSaveDialog(options, (filename) => {
-    event.sender.send('saved-file', filename)
-  })
-})
 
 let template = [{
   label: 'Stuff',
@@ -38,9 +18,9 @@ let template = [{
       shell.openExternal('https://github.com/floprock/Exosphere/releases/latest')
     }
 }, {
-    label: 'Check for Update',
+    label: 'Server Status',
     click: () => {
-      shell.openExternal('https://github.com/floprock/Exosphere/releases/latest')
+      shell.openExternal('https://status.duckforceone.gq/')
     }
   }, {
     label: 'About',
@@ -50,7 +30,7 @@ let template = [{
           type: 'info',
           title: 'About Exosphere',
           buttons: ['OK'],
-          message: 'Exosphere v 2.1.0 \n Author: floprock\n Used Libraries:\n Electron (https://electronjs.org)\n Node.js (https://nodejs.org/en/)\n \nInspired by: \nKodi (https://github.com/xbmc/xbmc)\nStreamBox (https://github.com/RedDuckss/StreamBox)\n  \n APIs used: \n Videospider for the IMDB and direct search (https://videospider.in) \n scr.cr for the search (https://scr.cr/) \n'
+          message: 'Exosphere v 2.2.0 \n Author: floprock (duckforceone)\n Used Libraries:\n Electron (https://electronjs.org)\n Node.js (https://nodejs.org/en/)\n \nInspired by: \nKodi (https://github.com/xbmc/xbmc)\nStreamBox (https://github.com/RedDuckss/StreamBox)\n  \n APIs used: \n ODB Movie Link Finder for the direct search (https://odb.to) \n Videospider for the IMDb search (https://videospider.in) \n scr.cr for the search (https://scr.cr/) \n'
 
 
         }
@@ -58,7 +38,7 @@ let template = [{
       }
     }
   }
-  
+
 
  ]
  }, {
@@ -78,7 +58,7 @@ let template = [{
       }
     }
  }, {
-    label: 'Wait, is this legal?',
+    label: 'Is this legal?',
     click: function (item, focusedWindow) {
       if (focusedWindow) {
         const options = {
@@ -131,7 +111,7 @@ let template = [{
           type: 'info',
           title: 'Contributors',
           buttons: ['Ok'],
-          message: 'Main Developer: floprock'
+          message: 'Main Developer: sineflex'
         }
         dialog.showMessageBox(focusedWindow, options, function () {})
       }
@@ -294,44 +274,33 @@ app.on('window-all-closed', () => {
   function createWindow () {
     // Erstellen des Browser-Fensters.
    var win = new BrowserWindow({
-   	width: 1660, 
+   	width: 1660,
    	height: 900,
-    title: 'Exosphere'
+    title: 'Exosphere v 2.2.0 beta'
    });
 win.on('page-title-updated', (evt) => {
   evt.preventDefault();
 });
-    // und Laden der index.html der App.
-    win.loadFile('./exoview.html')
 
+    win.loadURL('https://projects.duckforceone.gq/exosphere/index.html')
 
-  
-    // Ausgegeben, wenn das Fenster geschlossen wird.
     win.on('closed', () => {
-      // Dereferenzieren des Fensterobjekts, normalerweise würden Sie Fenster
-      // in einem Array speichern, falls Ihre App mehrere Fenster unterstützt. 
-      // Das ist der Zeitpunkt, an dem Sie das zugehörige Element löschen sollten.
+ 
       win = null
     })
   }
-  
-  // Diese Methode wird aufgerufen, wenn Electron mit der
-  // Initialisierung fertig ist und Browserfenster erschaffen kann.
-  // Einige APIs können nur nach dem Auftreten dieses Events genutzt werden.
+
   app.on('ready', createWindow)
 
-  // Verlassen, wenn alle Fenster geschlossen sind.
   app.on('window-all-closed', () => {
-    // Unter macOS ist es üblich für Apps und ihre Menu Bar
-    // aktiv zu bleiben bis der Nutzer explizit mit Cmd + Q die App beendet.
+
     if (process.platform !== 'darwin') {
       app.quit()
     }
   })
-  
+
   app.on('activate', () => {
-    // Unter macOS ist es üblich ein neues Fenster der App zu erstellen, wenn
-    // das Dock Icon angeklickt wird und keine anderen Fenster offen sind.
+
     if (win === null) {
       createWindow()
     }
@@ -345,25 +314,3 @@ ipcMain.on('open-file-dialog', (event) => {
     }
   })
 })
-
-ipcMain.on('ready', async event => {
-  const response = await got(`${API_URLS.TMDB}/movie/now_playing?api_key=${pickRand(API_KEYS.TMDB)}`);
-  const movies = JSON.parse(response.body);
-
-  event.sender.send('media-list', movies);
-});
-
-ipcMain.on('search-media', async (event, search) => {
-  const query = search.query;
-  const page = (search.page ? search.page : 1);
-  const response = await got(`${API_URLS.TMDB}/search/movie?query=${query}&page=${page}&api_key=${pickRand(API_KEYS.TMDB)}`);
-  const movies = JSON.parse(response.body);
-
-  event.sender.send('media-list', movies);
-});
-
-ipcMain.on('find-stream-data', async (event, search) => {
-  const stream_data = {
-    streams: []
-  };
-});
