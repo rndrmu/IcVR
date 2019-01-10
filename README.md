@@ -1,6 +1,6 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-# Exosphere[![Build Status](https://travis-ci.org/floprock/Exosphere.svg?branch=master)](https://travis-ci.org/floprock/Exosphere)[![Build status](https://ci.appveyor.com/api/projects/status/466ymwhxwwaih6bj?svg=true)](https://ci.appveyor.com/project/floprock/exosphere)
+# Exosphere[![Build Status](https://travis-ci.org/floprock/Exosphere.svg?branch=master)](https://travis-ci.org/floprock/Exosphere)[![Build status](https://ci.appveyor.com/api/projects/status/h7po7r5dqetl7g49?svg=true)](https://ci.appveyor.com/project/sineflex/exosphere-7peej)
 Exosphere is aimed to be a user-friendly Multimedia software center similar to <a href="https://github.com/xbmc/xbmc">Kodi</a>
 utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://electronjs.org">Electron</a> to build the UI.
 
