@@ -5,7 +5,7 @@ Exosphere is aimed to be a user-friendly Multimedia software center similar to <
 utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://electronjs.org">Electron</a> to build the UI.
 
 ## What's working
-- _You can search for and watch movies or TV-Shows_
+- _You can ~search for and~ watch movies or TV-Shows_
 - the UI
 ## What is still todo:
 - A proper User Interface
