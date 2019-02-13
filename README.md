@@ -7,6 +7,7 @@ utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://elec
 ## What's working
 - _You can ~search for and~ watch movies or TV-Shows_
 - the UI
+- It's basically still a kind of Browser, as everything is implemented <b>*very*</b> hackily.
 ## What is still todo:
 - A proper User Interface
 ## What's planned
