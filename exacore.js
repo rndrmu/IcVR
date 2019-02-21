@@ -30,7 +30,7 @@ let template = [{
           type: 'info',
           title: 'About Exosphere',
           buttons: ['OK'],
-          message: 'Exosphere v 2.2.0 \n Author: floprock (duckforceone)\n Used Libraries:\n Electron (https://electronjs.org)\n Node.js (https://nodejs.org/en/)\n \nInspired by: \nKodi (https://github.com/xbmc/xbmc)\nStreamBox (https://github.com/RedDuckss/StreamBox)\n  \n APIs used: \n ODB Movie Link Finder for the direct search (https://odb.to) \n Videospider for the IMDb search (https://videospider.in) \n scr.cr for the search (https://scr.cr/) \n'
+          message: 'Exosphere v 2.2.1 \n Author: floprock (duckforceone)\n Used Libraries:\n Electron (https://electronjs.org)\n Node.js (https://nodejs.org/en/)\n \nInspired by: \nKodi (https://github.com/xbmc/xbmc)\nStreamBox (https://github.com/RedDuckss/StreamBox)\n  \n APIs used: \n ODB Movie Link Finder for the direct search (https://odb.to) \n Videospider for the IMDb search (https://videospider.in) \n scr.cr for the search (https://scr.cr/) \n'
 
 
         }
@@ -276,13 +276,13 @@ app.on('window-all-closed', () => {
    var win = new BrowserWindow({
    	width: 1660,
    	height: 900,
-    title: 'Exosphere v 2.2.0 beta'
+    title: 'Exosphere v 2.2.1'
    });
 win.on('page-title-updated', (evt) => {
   evt.preventDefault();
 });
 
-    win.loadURL('https://projects.duckforceone.gq/exosphere/index.html')
+    win.loadFile('./index.html')
 
     win.on('closed', () => {
  

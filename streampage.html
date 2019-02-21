@@ -1,0 +1,31 @@
+<link rel="stylesheet" type="text/css" href="exo.css">
+<script src="exo.js"></script>
+<h1 class="everythinginthemenu_head" onclick="openNav()">☰ Exosphere Stream Page</h1>
+
+<input type="text" name="" placeholder="Type a Movie name here" width="100" id="Spiderman">
+<button type="button" onclick="vidspid()">Go!</button>
+<iframe name="stream_window" height="480" width="854"></iframe>
+
+<script type="text/javascript">
+	function vidspid() {
+    var plswork = document.getElementById("Spiderman").value;
+  
+    window.open("https://api.odb.to/embed?title="+plswork, "stream_window")
+}
+</script>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a id="frameless-window" class="pointy" href="./index.html">Go to the Startpage</a>
+  <a id="frameless-window" class="pointy" onclick="stevey()">Stream on scr.cr</a>
+  <a id="frameless-window" class="pointy" onclick="steve()">Stream on bs.to</a>
+  
+  <br>
+  
+  <a href="https://projects.duckforceone.gq/exosphere/#"></a>
+  
+</div>  
+
+<div class="footer">
+ <button type="button" class="infobtn">Exosphere (c) 2019 duckforce1</button><button type="button" class="infobtn" onclick="about()">About</button><button type="button" class="infobtn" onclick="License()">View License</button><button type="button" class="infobtn" onclick="patchnotes()">Patch Notes</button>
+</div>
