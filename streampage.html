@@ -10,7 +10,7 @@
 	function vidspid() {
     var plswork = document.getElementById("Spiderman").value;
   
-    window.open("https://api.odb.to/embed?title="+plswork, "stream_window")
+    self.frames['stream_window'].location.href = "https://api.odb.to/embed?title="+plswork
 }
 </script>
 
