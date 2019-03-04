@@ -8,6 +8,7 @@ utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://elec
 - _You can ~search for and~ watch movies or TV-Shows_
 - the UI
 - It's basically still a kind of Browser, as everything is implemented <b>*very*</b> hackily.
+- Ad-Blocking with <a href="https://pi-hole.net/">Pi-Hole (Recommended)</a> or <a href="https://adguard.com/de/adguard-dns/overview.html#instruction">AdGuard DNS (Not Recommended)</a>
 ## What is still todo:
 - A proper User Interface
 ## What's planned
