@@ -14,7 +14,6 @@ utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://elec
 ## What's planned
 - Netflix like UI
 - Android Builds
-- ´Full transition into a Kodi & Retroarch hybrid
 ## Usage
 1. Download .zip of this Repo
 2. install <a href="https://nodejs.org/en/download/">Node.js</a>
