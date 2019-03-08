@@ -22,7 +22,7 @@ var strWindowFeatures = "menubar=yes,location=yes,resizable=yes,scrollbars=yes,s
 
 
 function patchnotes() {
-	alert('New in v 2.2.1 \n - Reenabled Search \n - Search results now display in an iframe \n\n\n New in v2.2 \n - More menu options \n - Added built-in Patch Notes viewer \n - Switched search provider back to odb.to for CAPTCHA reasons \n - added secondary stream provider \n - burning series stream (german site. !! HAS CAPTCHAS AND ADS [you can make an account to hide the ads]!! \n - Streams open in a new window, you must close them individually \n - Direct Search and Search functions have been temporarily disabled \n' , 'Patch Notes')
+	alert('New in v 2.2.2 \n - added IMDb ID search bar \n - added experimental secondary UI powered by cine.to \n\n\n\nNew in v 2.2.1 \n - Reenabled Search \n - Search results now display in an iframe \n\n\n New in v2.2 \n - More menu options \n - Added built-in Patch Notes viewer \n - Switched search provider back to odb.to for CAPTCHA reasons \n - added secondary stream provider \n - burning series stream (german site. !! HAS CAPTCHAS AND ADS [you can make an account to hide the ads]!! \n - Streams open in a new window, you must close them individually \n - Direct Search and Search functions have been temporarily disabled \n' , 'Patch Notes')
 }
 function steve(){
 	window.open("https://bs.to", '_blank', 'frame=0', 'close=yes')
