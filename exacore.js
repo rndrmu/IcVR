@@ -305,12 +305,11 @@ win.on('page-title-updated', (evt) => {
       createWindow()
     }
   })
-ipcMain.on('open-file-dialog', (event) => {
-  dialog.showOpenDialog({
-    properties: ['openFile', 'openDirectory']
-  }, (files) => {
-    if (files) {
-      event.sender.send('selected-directory', files)
-    }
-  })
-})
+
+
+ipcMain.on('ready', async event => {
+  const response = await got(`https://api.themoviedb.org/3/movie/now_playing?api_key=47206932c7a5e718453916349a089a65`);
+  const movies = JSON.parse(response.body);
+
+  event.sender.send('media-list', movies);
+});

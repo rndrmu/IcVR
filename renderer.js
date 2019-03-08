@@ -1,4 +1,13 @@
-// This file is required by the app and will
-// be executed in the renderer process for that window.
-// All of the Node.js APIs are available in this process.
+const {BrowserWindow} = require('electron').remote
+const newWindowBtn = document.getElementById('frameless-window')
+var plswork = document.getElementById("Spiderman").value
+const url = require('url')
 
+newWindowBtn.addEventListener('click', (event) => {
+  const modalPath = url.join('https://videospider.in/getvideo?key=JhhbVDPq3GIdkhuE&title='+plswork)
+  let win = new BrowserWindow({ frame: false })
+
+  win.on('close', () => { win = null })
+  win.loadURL(modalPath)
+  win.show()
+})

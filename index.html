@@ -1,28 +1,35 @@
 <!DOCTYPE html>
-<!-- saved from url=(0043)https://projects.duckforceone.gq/exosphere/ -->
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-      
+
       <title>Exosphere</title>
       </head>
       <body>
 <link rel="stylesheet" type="text/css" href="exo.css">
 <!--
 <div class="announcements">
-	
+
 	<p class="announcements">Dummy Text please ignore :)</p>
-		<h2 class="announcements">⚠ Lorem Ipsum dolor sit amet</h2>
+		<h2 class="announcements">⚠ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h2>
 
 	</div>
 -->
 	<div id="main">
 <h1 class="everythinginthemenu_head" onclick="openNav()">☰ Exosphere Main Menu</h1>
-<p class="everythinginthemenu">I don't have anything planned for this screen yet, so please click inside the green box :)</p>
+<p class="everythinginthemenu">This screen is more of a IMDb lookup screen. !BE AWARE, THE LOOKUP IS STILL IN RAW JSON FORMAT! Click inside the green box to access the menu.</p>
 
 <div class="footer">
  <button type="button" class="infobtn">Exosphere (c) 2019 duckforce1</button><button type="button" class="infobtn" onclick="about()">About</button><button type="button" class="infobtn" onclick="License()">View License</button><button type="button" class="infobtn" onclick="patchnotes()">Patch Notes</button>
 </div>
+
+
+<script src="vulkan.js"></script>
+ <input id="mv_searchbar" type="text" placeholder="Search String"></input><button type="button" onclick="getID()">Search!</button>
+  <input id="tmdb_id" type="text" placeholder="TMDB ID"></input><button type="button" onclick="getimdb()">Get ID!</button>
+ <p id="id_ls">TMBD Search results go here.</p>
+
+<iframe name="imdb_wdw" height="1280" width="720"></iframe>
 
 <div class="gallery">
   <a target="_blank" href="https://github.com/floprock/Exosphere/releases/latest">
@@ -33,19 +40,15 @@
 </div>
 
 <script src="exo.js"></script>
-<script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
- 
     <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
   <a id="frameless-window" class="pointy" href="./streampage.html">Go to the stream page</a>
+    <a id="frameless-window" class="pointy" href="./test.html">dev_test_pge</a>
   <br>
-  
+
   <a href="https://projects.duckforceone.gq/exosphere/#"></a>
 
-</div>  
+</div>
 
 </body>
 
