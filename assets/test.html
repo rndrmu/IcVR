@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./css/exo.css">
+    <script src="./js/exo.js"></script>
+      </head>
+    <body>
+      <style>
+    body, html {
+      height:100%;
+      padding: 0px;
+      margin:0px;
+      overflow: hidden;
+      background-color: #22252a;
+    }
+  </style>
+
+   <div id="title-bar">
+      <div id="title">𝕀𝕔𝕪𝕍𝕚𝕖𝕨ℝ 𝕧𝟚.𝟛</div>
+      <div id="title-bar-btns">
+        <button id="min-btn"><b>-</b></button>
+        <button id="max-btn"><b>O</b></button>
+        <button id="close-btn"><b>X</b></button>
+      </div>
+    </div>
+
+
+    <webview
+    id="discord" src="https://cine.to"
+    style="overflow: hidden; width:100%; height:100%;"
+  >
+  </webview>
+
+
+  <div class="footer">
+ <button type="button" class="infobtn">IcyViewR (c) 2019 duckforce1</button><button type="button" class="infobtn" onclick="about()">About</button><button type="button" class="infobtn" onclick="License()">View License</button><button type="button" class="infobtn" onclick="patchnotes()">Patch Notes</button><button type="button" class="infobtn" onclick="openNav()">Reopen Sidenav</button>
+</div>
+
+
+    <div id="mySidenav" class="sidenav">
+      <br>
+            <br>
+                  <br>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a id="frameless-window" class="pointy" href="./streampage.html">Go to the stream page</a>
+    <a id="frameless-window" class="pointy" href="./test.html">dev_test_pge</a>
+  <br>
+
+  <a href="https://projects.duckforceone.gq/exosphere/#"></a>
+
+</div>
+</body>
+<script>
+  require('./js/renderer.js')
+</script>
+
+   </html>
