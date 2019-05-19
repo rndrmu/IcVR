@@ -11,6 +11,7 @@ app.on('window-all-closed', function() {
 app.on('ready', function() {  
   mainWindow = new BrowserWindow({width: 1660, height: 900, frame: false, icon: `./icon.ico`, title: ''});  
   mainWindow.loadFile('./assets/app.html');  
+  mainWindow.webContents.openDevTools();
   mainWindow.on('closed', function() {
     mainWindow = null;
   });  

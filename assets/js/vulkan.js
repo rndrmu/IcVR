@@ -1,3 +1,4 @@
+/*
 function getID() {
 
 var apikey = "47206932c7a5e718453916349a089a65"
@@ -10,16 +11,36 @@ self.frames['imdb_wdw'].location.href = "https://api.themoviedb.org/3/search/mov
 
 // document.getElementById('id_ls').innerHTML = hrd.name + hrd.id
 }
-//https://api.themoviedb.org/3/movie/"+dec_id+"?api_key="+apikey
-function getimdb() {
-  var apikey = "47206932c7a5e718453916349a089a65"
-  var tmdbid = document.getElementById('tmdb_id').value
+*/
 
-  self.frames['imdb_wdw'].location.href = "https://api.themoviedb.org/3/movie/"+tmdbid+"?api_key="+apikey
+
+//https://api.themoviedb.org/3/movie/"+dec_id+"?api_key="+apikey
+
+ window.$ = window.jQuery = require('jquery');
+  window.$ = window.jQuery = require('jquery.js');
+
+function getimdb() {
+
+ window.$ = window.jQuery = require('jquery');
+  window.$ = window.jQuery = require('jquery.js');
+
+  var apikey = "47206932c7a5e718453916349a089a65";
+  var tmdbid = document.getElementById('tmdb_id').value;
+
+  var imdbidurl = "https://api.themoviedb.org/3/movie/"+tmdbid+"?api_key="+apikey;
+
+  $.getJSON(imdbidurl, function(data) {
+
+    $('#imdb_id_return').html(data.imdb_id);
+    $('#imdb_title_return').html(data.original_title);
+
+  });
+
+
 }
 
 
-function test() {
+/*function test() {
   var apikey = "47206932c7a5e718453916349a089a65"
   var query = document.getElementById('mv_searchbar').value
   var obj, obj2, dbParam, xmlhttp, myObj, x, txt = "";
@@ -42,3 +63,4 @@ xmlhttp.open("POST", "https://api.themoviedb.org/3/search/movie?api_key="+apikey
 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xmlhttp.send("x=" + dbParam);
 }
+*/

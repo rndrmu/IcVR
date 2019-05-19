@@ -1,4 +1,8 @@
-	html{ height:100%; }
+	@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Exo:200i&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu:700&display=swap');
+  html{ height:100%; }
 body{ min-height:100%; padding:0; margin:0; position:relative; }
 .infobtn {
 	border: none;
@@ -28,45 +32,7 @@ body {
  position: relative;
 }
 
-body::after {
-  content: '';
-  display: block;
-  height: 50px; /* Set same as footer's height */
-}
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
 
 #main {
     transition: margin-left .5s;
@@ -78,41 +44,38 @@ body::after {
   .sidenav a {font-size: 18px;}
 }
 
-.everythinginthemenu_head {
+.head {
 	margin: auto;
-    border: 3px solid green;
+    border: 3px solid #73AD21;
+
+    background: #73AD21;
     padding: 10px;
     text-align: center;
-    cursor:pointer
 }
-.everythinginthemenu {
-	margin: auto;
-    padding: 10px;
-    text-align: center;
+
+.nigward {
+
+  font-size: 20px;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.squigga {
+
+  font-size: 30px;
+  font-family: 'Ubuntu', bold italic;
+}
+
+#mvTriviaNShit {
+
+  font-family: 'Exo', sans-serif;
+}
+
+.yEEt {
+
+
     
 }
-div.gallery {
-    margin: 5px;
-    border: 1px solid #ccc;
-    float: right;
-    width: 180px;
-    text-align: center;
-}
 
-div.gallery:hover {
-    border: 1px solid #777;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-    text-align: center;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
-}
 .txtbox {
   width: 80%;
   margin-bottom: 2px;
@@ -123,15 +86,7 @@ div.desc {
 	cursor: pointer;
 }
 
-.announcements {
-	background-color: yellow; 
-	margin: auto;
-    text-align: center;
- position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-}
+
 
 #title-bar {
   -webkit-app-region: drag;
@@ -181,4 +136,43 @@ font-family: "Segoe UI", sans-serif;
 
 a {
   color: #68217A;
+}
+
+.btn_get {
+  background-color: #73AD21;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+   border-radius: 15px;
+}
+
+
+/* Darker background on mouse-over */
+.btn_get:hover {
+  background-color: rgb(86, 135, 18);
+}
+
+.input_get {
+  border-radius: 25px;
+}
+
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
 }

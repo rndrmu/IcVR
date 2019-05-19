@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  		      <script>window.$ = window.jQuery = require('jquery');</script>
+            <script>window.$ = window.jQuery = require('./js/jquery.js');</script>
+    <link rel="stylesheet" type="text/css" href="./css/exo.css">
+    <script src="./js/exo.js"></script>
+            <script type="text/javascript" src="./js/jquery.js"></script>
+
+   <div id="title-bar">
+      <div id="title">𝕀𝕔𝕪𝕍𝕚𝕖𝕨ℝ</div>
+      <div id="title-bar-btns">
+        <button id="min-btn"><b>-</b></button>
+        <button id="max-btn"><b>O</b></button>
+        <button id="close-btn"><b>X</b></button>
+      </div>
+    </div>
+
+
+  <title>Movie Title Parser POC</title>
+
+  <style type="text/css">
+    
+   .text {
+position:relative;
+bottom:10px;
+left:0px;
+visibility:hidden;
+color: red;
+float: center;
+}
+
+#wrapper {
+  float: left; 
+  margin-right: 2px;
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+
+#wrapper:hover {
+visibility:visible;
+  border: 1000px magenta;
+}
+
+    body, html {
+      height:100%;
+      padding: 0px;
+      margin:0px;
+      overflow: hidden;
+      background-color: #22252a;
+      overflow: visible;
+    }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      border-radius: 75px 25px;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+      border-radius: 75px 25px;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+ <input id="postersearch" type="text" placeholder="Hello World" /> <button onclick="getposters()">Search!</button>
+
+
+ <div id="wrapper"></div>
+
+<div id="myModal" class="modal" >
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="head">
+      <span class="close">&times;</span>
+      <h2 id="mvName" class="squigga"></h2>
+    </div>
+    <div class="yEEt">
+    	<p id="mvStreamLink"></p>
+      <p id="mvDesc" class="nigward"></p>
+    </div>
+    <div class="head">
+      <h3 id="mvTriviaNShit"></h3>
+    </div>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+      
+      var api_key_2_electric_boogaloo = "47206932c7a5e718453916349a089a65";
+      var yeet_yeet = "https://api.themoviedb.org/3/movie/now_playing?api_key="+api_key_2_electric_boogaloo+"&language=en-US&page=1";
+
+      $.getJSON(yeet_yeet, function(superyeet) {
+
+      	var letsyeet;
+
+      	$.each(superyeet.results, function(i, uberyeet) {
+      		letsyeet += ("<img onclick=\"getnonretardedid("+uberyeet.id+")\" class=\"nigga\" src=\"http://image.tmdb.org/t/p/w185/"+ uberyeet.poster_path +"\">");
+      	});
+
+      	$("#wrapper").append(letsyeet).html();
+
+
+      });
+
+});
+
+
+function getposters() {
+
+$("img").remove();  // cleanup of previous searches :)
+
+var query = document.getElementById('postersearch').value;
+
+var apikey = "47206932c7a5e718453916349a089a65";
+
+var apiurl = "https://api.themoviedb.org/3/search/movie?api_key="+apikey+"&language=en-US&query="+query+"&page=1&include_adult=false";
+
+// get posters :)
+
+$.getJSON(apiurl, function(data) {
+
+
+var myPoster = "";
+$.each(data.results, function (index, item) {
+myPoster += ("<img onclick=\"getnonretardedid("+item.id+")\" class=\"nigga\" src=\"http://image.tmdb.org/t/p/w185/"+ item.poster_path +"\">");
+});
+
+
+$("#wrapper").append(myPoster).html();
+
+
+});
+}
+
+// get id :)
+
+function getnonretardedid(retardedid) {
+
+ var tmdbid = retardedid;
+ var apikey = "47206932c7a5e718453916349a089a65";
+
+var imdburl = "https://api.themoviedb.org/3/movie/"+tmdbid+"?api_key="+apikey;
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+$.getJSON(imdburl, function(imdb) {
+
+ // alert(imdb.imdb_id + "\n\n" + imdb.original_title + "\n\n" + imdb.overview);
+
+ $('#mvName').html(imdb.original_title);
+  $('#mvDesc').html(imdb.overview);
+   $('#mvStreamLink').html("<iframe src=\"https://api.odb.to/embed?imdb_id="+imdb.imdb_id+"\" width=\"640\" height=\"360\" allowscriptaccess=\"always\" allowfullscreen=\"true\" scrolling=\"no\" frameborder=\"0\"></iframe>");
+   	$('#mvTriviaNShit').html("Vote Average: "+imdb.vote_average+"\nLanguage: "+imdb.original_language);
+   modal.style.display = "block";
+
+});
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+} 
+</script>
+</body>
+</html>
+
+</body>
+
+  <div class="footer">
+ <button type="button" class="infobtn">IcyViewR (c) 2019 duckforce1</button><button type="button" class="infobtn" onclick="about()">About</button><button type="button" class="infobtn" onclick="License()">View License</button><button type="button" class="infobtn" onclick="patchnotes()">Patch Notes</button><button type="button" class="infobtn" onclick="alert('squigga')">Nigward</button>
+</div>
+
+</body>
+
+   </html>
