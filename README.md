@@ -5,15 +5,13 @@ IcyViewR is aimed to be a user-friendly Multimedia entertainment center similar 
 utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://electronjs.org">Electron</a> to build the UI.
 
 ## What's working
-- _You can *kinda* search for and watch movies or TV-Shows_
+- _You can *kinda* search for and watch movies ~or TV-Shows~_
 - the UI
-- It's basically still a kind of Browser, as everything is implemented <b>*very*</b> hackily.
 - Ad-Blocking with <a href="https://pi-hole.net/">Pi-Hole (Recommended)</a> or <a href="https://adguard.com/de/adguard-dns/overview.html#instruction">AdGuard DNS (Not Recommended)</a>
 ## What is still todo:
-- A proper User Interface
-## What's planned
-- Netflix like UI
 - Android Builds
+## What's planned
+- More Shows and not just movies
 ## Usage
 1. Download .zip of this Repo
 2. install <a href="https://nodejs.org/en/download/">Node.js</a>
