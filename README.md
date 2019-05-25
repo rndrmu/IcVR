@@ -1,4 +1,4 @@
-<a href="https://github.com/floprock/IcyViewR/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/badge/License-Proprietary-blue.svg?style=for-the-badge"></a>
+<a href="https://github.com/floprock/IcyViewR/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/badge/License-Semi-Open-Source-blue.svg?style=for-the-badge"></a>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 # IcyViewR [![Build Status](https://travis-ci.org/floprock/IcyViewR.svg?branch=master)](https://travis-ci.org/floprock/IcyViewR)[![Build status](https://ci.appveyor.com/api/projects/status/enx409k96ywgt0nd?svg=true)](https://ci.appveyor.com/project/sineflex/icyviewr)
