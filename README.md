@@ -8,7 +8,7 @@ IcyViewR is aimed to be a user-friendly Multimedia entertainment center similar 
 utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://electronjs.org">Electron</a> to build the UI.
 
 ## What's working
-- _You can *kinda* search for and watch movies ~or TV-Shows~_
+- _You can search for and watch movies ~or TV-Shows~_
 - the UI
 - Ad-Blocking with <a href="https://pi-hole.net/">Pi-Hole (Recommended)</a> or <a href="https://adguard.com/de/adguard-dns/overview.html#instruction">AdGuard DNS (Not Recommended)</a>
 ## What is still todo:
