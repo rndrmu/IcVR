@@ -1,4 +1,4 @@
-<a href="https://github.com/floprock/IcyViewR/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/badge/License-Proprietary--with--restrictions-blue.svg?style=for-the-badge"></a><a href="https://github.com/floprock/IcyViewR/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/badge/-Semi%20Open--Source-green.svg?style=for-the-badge"></a>
+<a href="https://github.com/floprock/IcyViewR/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/badge/License-Proprietary__with__restrictions-blue.svg?style=for-the-badge"></a><a href="https://github.com/floprock/IcyViewR/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/badge/-Semi%20Open--Source-orange.svg?style=for-the-badge"></a>
 
 
 
