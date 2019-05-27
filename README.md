@@ -1,8 +1,6 @@
 <a href="https://github.com/floprock/IcyViewR/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/badge/License-Proprietary_with_restrictions-blue.svg?style=for-the-badge"></a><a href="https://github.com/floprock/IcyViewR/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/badge/-Semi%20Open--Source-orange.svg?style=for-the-badge"></a><a href="https://github.com/floprock/IcyViewR/releases/latest">
 <br>
 <img alt="Release" src="https://img.shields.io/badge/Latest%20Version-2.4.1-blue.svg?style=for-the-badge"></a>
-## This product uses the TMDb API but is not endorsed or certified by TMDb.
-
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 # IcyViewR [![Build Status](https://travis-ci.org/floprock/IcyViewR.svg?branch=master)](https://travis-ci.org/floprock/IcyViewR)[![Build status](https://ci.appveyor.com/api/projects/status/enx409k96ywgt0nd?svg=true)](https://ci.appveyor.com/project/sineflex/icyviewr)
@@ -26,3 +24,6 @@ utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://elec
 4. Type "npm install -i" to install all dependencies
 5. Type "npm start"
 6. Profit
+
+
+# This product uses the TMDb API but is not endorsed or certified by TMDb.
