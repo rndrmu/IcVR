@@ -6,7 +6,7 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder build -wl --publish=always",
+    "dist": "electron-builder --publish=always",
     "build": "electron-packager ./ --platform=all --arch=x64"
   },
   "repository": "https://github.com/sineflex/Exosphere",
