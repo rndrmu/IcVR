@@ -8,14 +8,27 @@ body{ min-height:100%; padding:0; margin:0; position:relative; }
 	border: none;
 	background-color: darkgrey;
 }
-.footer {
+.downsides {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 150%;
   background-color: darkgrey;
-    color: white;
+    color: black;
     text-align: left;
+}
+
+.dick {
+  color: black;
+  border-radius: 15px 15px;
+  border: none;
+  background-color: rgb(60, 60, 60);
+}
+
+.srchbx {
+border-radius: 15px 15px;
+border: none;
+background-color: rgb(60, 60, 60);
 }
 
 .txtbox {
@@ -30,6 +43,7 @@ body {
   background-color: rgb(60, 60, 60);
  transition: background-color .5s;
  position: relative;
+ overflow: hidden;
 }
 
 
@@ -54,26 +68,49 @@ body {
 }
 
 .nigward {
-
+  color: black;
   font-size: 20px;
   font-family: 'Oxygen', sans-serif;
 }
 
-.squigga {
+.niggward {
+  color: black;
+  font-size: 15px;
+  font-family: 'Oxygen', sans-serif;
+}
 
+.squigga {
+  color: black;
   font-size: 30px;
   font-family: 'Ubuntu', bold italic;
 }
 
-#mvTriviaNShit {
+.squigga2 {
 
+  font-size: 20px;
+  font-family: 'Ubuntu', bold italic;
+    color: black;
+}
+
+#mvTriviaNShit {
+  color: black;
   font-family: 'Exo', sans-serif;
 }
 
-.yEEt {
+#moartrivia {
+  color: black;
+  font-family: 'Exo', sans-serif;
+}
 
 
-    
+.streambtn {
+  border: none;
+  background-color: royalblue;
+  font-size: 25px;
+  font-family: 'Ubuntu', bold;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  color: black;
 }
 
 .txtbox {
@@ -176,3 +213,93 @@ a {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
+
+    
+   .text {
+position:relative;
+bottom:10px;
+left:0px;
+visibility:hidden;
+color: red;
+float: center;
+}
+
+#wrapper {
+  float: left; 
+  margin-right: 2px;
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+
+#wrapper:hover {
+visibility:visible;
+  border: 1000px magenta;
+}
+
+    body, html {
+      height:100%;
+      padding: 0px;
+      margin:0px;
+      overflow: hidden;
+      background-color: #22252a;
+    }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      border-radius: 75px 25px;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+      border-radius: 75px 25px;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+

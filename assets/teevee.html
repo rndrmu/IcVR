@@ -1,43 +1,82 @@
 <!DOCTYPE html>
   <html>
   <head>
-  		      <script>window.$ = window.jQuery = require('jquery');</script>
-            <script>window.$ = window.jQuery = require('./js/jquery.js');</script>
-<!--All the needed external shit-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>window.$ = window.jQuery = require('jquery');</script>
+        <script>window.$ = window.jQuery = require('./js/jquery.js');</script>
+        <link rel="stylesheet" type="text/css" href="./css/howdy.css">
+        <script src="./js/exo.js"></script>
+        <script type="text/javascript" src="./js/jquery.js"></script>
+        <script type="text/javascript" src="./js/gashead.js"></script>
+        <script type="text/javascript" src="./js/yeeted_bullshit.js"></script>
+        <script type="text/javascript" src="./js/notesLaPatch.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/prettify/prettify.css">
         <link rel="stylesheet" href="css/jquery.scrollbar.css">
         <script type="text/javascript" src="js/prettify/prettify.js"></script>
         <script type="text/javascript" src="js/jquery.scrollbar.js"></script>
         <script type="text/javascript">jQuery(document).ready(function($){window.prettyPrint && prettyPrint();$('.wrapper').scrollbar();});</script>
-    	<link rel="stylesheet" type="text/css" href="./css/exo.css">
-    	<script src="./js/exo.js"></script>
-        <script type="text/javascript" src="./js/jquery.js"></script>
-        <script type="text/javascript" src="./js/yeetHAW.js"></script>
-        <link rel="stylesheet" type="text/css" href="./css/howdy.css">
-        <script type="text/javascript" src="./js/notesLaPatch.js"></script>
-<!--All the needed external shit-->
+        <link rel="stylesheet" type="text/css" href="./css/exo.css">
 
    <div id="title-bar">
       <div id="title">IcyViewR 2.5.0</div>
       <div id="title-bar-btns">
-        <input class="srchbx" id="postersearch" type="text" placeholder="Search..." /> <button class="dick fa fa-search" onclick="getposters()"></button>
+        <input class="srchbx" id="postersearch" type="text" placeholder="Search..." /> <button class="dick fa fa-search" onclick="getposters()">
         <button id="min-btn"><b>-</b></button>
         <button id="max-btn"><b>+</b></button>
         <button id="close-btn"><b>x</b></button>
       </div>
     </div>
 
-<div class="wrapper scrollbar-dynamic">
-  <title>Movie Title Parser POC</title>
+
+  <title>TV Show Title Parser POC</title>
 
   <style type="text/css">
-
-
+    
+  
   </style>
 </head>
 <body>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<center>
+<img alt="GitHub license" src="https://www.themoviedb.org/assets/2/v4/logos/408x161-powered-by-rectangle-green-bb4301c10ddc749b4e79463811a68afebeae66ef43d17bcfd8ff0e60ded7ce99.png">
+</center>
+ <div id="wrapper"></div>
+
+<div id="myModal" class="modal" >
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="head">
+      <span class="close">&times;</span>
+      <h2 id="mvName" class="squigga"></h2>
+    </div>
+    <div class="yEEt">
+    	<p id="mvStreamLink"></p>
+      <p id="mvDesc" class="nigward"></p>
+    </div>
+    <div class="head">
+      <h3 id="mvTriviaNShit"></h3>
+    </div>
+  </div>
+
+</div>
+
+
 
 <div id="patch" class="modal" >
 
@@ -80,7 +119,6 @@
 
 </div>
 
-
 <div id="license" class="modal" >
 
   <!-- Modal content -->
@@ -113,60 +151,21 @@ The above copyright notice and this permission notice shall be included in all c
 </div>
 
 
- <p id="wrapper"></p>
-
-<div id="myModal" class="modal" >
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="head">
-      <span class="close">&times;</span>
-      <h2 id="mvName" class="squigga"></h2>
-    </div>
-    <div class="yEEt">
-    	<p id="mvStreamLink"></p>
-      <span id="mvDesc" class="nigward"></span>
-    </div>
-    <div class="head">
-      <h3 id="mvTriviaNShit"></h3>
-    </div>
-  </div>
-
-</div>
-
-<script type="text/javascript">
-
-</script>
 </body>
 </html>
 
 </body>
 
-<script type="application/javascript" src="http://ipinfo.io/?format=jsonp&callback=getIP"></script>
-<script type="application/javascript">
-  function getIP(json) {
-    alert(json.ip, 'IP ADRESS');
-  }
-</script>
-
-
-
-
   <div class="downsides">
- <button type="button" class="infobtn">IcyViewR (c) 2019 duckforce1</button><button type="button" class="infobtn" onclick="about()">About</button><button type="button" id="licensebtn" class="infobtn" onclick="newlicense()">View License</button><button type="button" class="infobtn" id="patchbtn" onclick="patchMe()">Patch Notes</button><button type="button" class="infobtn" onclick='window.location.href = "teevee.html"'>Change to TV Shows</button><button type="button" class="infobtn" onclick='getIP()'>View IP</button>
+ <button type="button" class="infobtn">IcyViewR (c) 2019 duckforce1</button><button type="button" class="infobtn" onclick="about()">About</button><button type="button" id="licensebtn" class="infobtn" onclick="newlicense()">View License</button><button type="button" id="patchbtn" class="infobtn" onclick="patchMe()">Patch Notes</button><button type="button" class="infobtn" onclick='window.location.href = "./app.html"'>Go to the movie page</button>
 </div>
 
 </body>
-<script>
-	
-	require('./js/renderer.js');
-
-</script>
 
 <script>
-jQuery(document).ready(function(){
-    jQuery('.scrollbar-macosx').scrollbar();
-});
+  
+  require('./js/renderer.js');
+
 </script>
 
    </html>
