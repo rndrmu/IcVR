@@ -311,7 +311,7 @@ var btn = document.getElementById("myBtn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
-  var ticket = "https://squidly.gq/ticket.php?id="+tmdbid;
+  var ticket = "http://icyviewr.unaux.com/ticket.php?id="+tmdbid;
 
     $.getJSON(ticket, function(data) {
       var ree;

@@ -108,7 +108,7 @@ function episodeinfo(seasonno) {
 function getlink(episode) {
 
 
-  var ticket = "https://squidly.gq/ticket.php?tvid="+window.idtv+"&season="+window.season;
+  var ticket = "http://icyviewr.unaux.com/ticket.php?tvid="+window.idtv+"&season="+window.season;
 
     $.getJSON(ticket, function(data) {
       var reetv;
