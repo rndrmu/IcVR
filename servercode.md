@@ -1,5 +1,5 @@
 ## The following code is the .php used to get the tickets required by videospider.in
-### The URL is https://squidly.gq/ticket.php
+### The URL is http://icyviewr.unaux.com/ticket.php <sup><sup><sup><sup><sup><sup><sup><sup><sup>thanks infinityfree</sup></sup></sup></sup></sup></sup></sup></sup></sup>
 
 <code>
 <?php
