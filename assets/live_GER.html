@@ -2,9 +2,9 @@
   <html>
   <head>
 
-  		      <script>window.$ = window.jQuery = require('jquery');</script>
-            <script>window.$ = window.jQuery = require('./js/jquery.js');</script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  		  <script>window.$ = window.jQuery = require('jquery');</script>
+        <script>window.$ = window.jQuery = require('./js/jquery.js');</script>
+		    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/prettify/prettify.css">
         <link rel="stylesheet" href="css/jquery.scrollbar.css">
@@ -14,15 +14,13 @@
     	<link rel="stylesheet" type="text/css" href="./css/exo.css">
     	<script src="./js/exo.js"></script>
         <script type="text/javascript" src="./js/jquery.js"></script>
-        <script type="text/javascript" src="./js/tv.uncompressed.js"></script>
         <link rel="stylesheet" type="text/css" href="./css/howdy.css">
         <script type="text/javascript" src="./js/notesLaPatch.js"></script>
 
    <div id="title-bar" style="position: -webkit-sticky; position: sticky; top: 0; background-color: #22252a;">
-      <div id="title">IcyViewR 3.0.0  </div>
+      <div id="title">IcyViewR 3.0.0 </div>
       
       <div id="title-bar-btns">
-        <input class="srchbx" id="postersearch" style="width: 250px;" type="text" placeholder="Search..." /> <button class="dick fa fa-search" onclick="getposters()" style="margin-right: 50px;">
         <button id="min-btn"><b>-</b></button>
         <button id="max-btn"><b>+</b></button>
         <button id="close-btn" style="margin-right: 10px;"><b>x</b></button>
@@ -32,42 +30,73 @@
 
   <title>TV Show Title Parser POC</title>
 
-  <style type="text/css">
-    
-    html::-webkit-scrollbar { width: 0 ! important }
 
-
-  
-  </style>
 </head>
+
+
 
 <div class="parent">
     <div class="child">
 
-<body style="scrollbar-width: none; overflow-y: auto;">
-
- <div id="wrapper"></div>
-
-<div id="myModal" class="modal" >
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="head">
-      <span class="close">&times;</span>
-      <h2 id="mvName" class="squigga"></h2>
-    </div>
-    <div class="yEEt">
-    	<p id="mvStreamLink"></p>
-      <p id="mvDesc" class="nigward"></p>
-    </div>
-    <div class="head">
-      <h3 id="mvTriviaNShit"></h3>
-    </div>
-  </div>
-
-</div>
 
 
+<body>
+
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Or if you want a more recent canary version -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/hls.js@canary"></script> -->
+<video id="video" controls="show" width="1024" height="576"></video>
+<select id="mebuttons" onchange="myFunction()">
+  
+
+</select>
+
+<script>
+  var proxy = 'https://cors-anywhere.herokuapp.com/';
+  var jsonfile = "https://raw.githubusercontent.com/Patricks-Corner/ideal-meme/master/listGER.json"
+  var spongeboymebob;
+  var srcvideo;
+
+  $.getJSON(jsonfile, function(data) {
+
+      $.each(data, function(i, sub) {
+
+          spongeboymebob += ("<option value="+sub.url+">"+sub.channel+"</option>");
+
+      });
+
+        $("#mebuttons").append(spongeboymebob).html();
+  });
+
+function myFunction() {
+  var x = document.getElementById("mebuttons").value;
+  getstream(x);
+}
+
+function getstream(srcvideo) {
+  var video = document.getElementById('video');
+  if(Hls.isSupported()) {
+    var hls = new Hls();
+    hls.loadSource(srcvideo);
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED,function() {
+      video.play();
+  });
+ }
+ // hls.js is not supported on platforms that do not have Media Source Extensions (MSE) enabled.
+ // When the browser has built-in HLS support (check using `canPlayType`), we can provide an HLS manifest (i.e. .m3u8 URL) directly to the video element throught the `src` property.
+ // This is using the built-in support of the plain video element, without using hls.js.
+ // Note: it would be more normal to wait on the 'canplay' event below however on Safari (where you are most likely to find built-in HLS support) the video.src URL must be on the user-driven
+ // white-list before a 'canplay' event will be emitted; the last video event that can be reliably listened-for when the URL is not on the white-list is 'loadedmetadata'.
+  else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = 'https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8';
+    video.addEventListener('loadedmetadata',function() {
+      video.play();
+    });
+  }
+}
+</script>
 
 <div id="patch" class="modal" >
 
@@ -86,7 +115,7 @@
                 </ul>
            <li>Added an Online (Webbrowser) Version</li>
                 <ul>
-                    <li>The domain for this, is https://icyv.gq. But add following exceptions/Static Filters to your AdBlocker <code>@@||jsonip.com^$script,domain=icyv.gq</code> <code>@@||api.ipify.org^$xmlhttprequest,domain=icyv.gq</code> </li>
+                    <li>The domain for this is https://icyv.gq. But add following exceptions/Static Filters to your AdBlocker <code>@@||jsonip.com^$script,domain=icyv.gq</code> <code>@@||api.ipify.org^$xmlhttprequest,domain=icyv.gq</code> </li>
                 </ul>
       </ul>
 
@@ -161,7 +190,7 @@ The above copyright notice and this permission notice shall be included in all c
 </body>
 
   <div class="downsides">
- <button type="button" class="infobtn">IcyViewR (c) 2019 duckforce1</button><button type="button" class="infobtn" onclick="about()">About</button><button type="button" id="licensebtn" class="infobtn" onclick="newlicense()">View License</button><button type="button" id="patchbtn" class="infobtn" onclick="patchMe()">Patch Notes</button><button type="button" class="infobtn" onclick='window.location.href = "./app.html"'>Movies</button><button type="button" class="infobtn" onclick='window.location.href = "./live_GER.html"'>Live TV</button>
+ <button type="button" class="infobtn">IcyViewR (c) 2019 duckforce1</button><button type="button" class="infobtn" onclick="about()">About</button><button type="button" id="licensebtn" class="infobtn" onclick="newlicense()">View License</button><button type="button" id="patchbtn" class="infobtn" onclick="patchMe()">Patch Notes</button><button type="button" class="infobtn" onclick='window.location.href = "./app.html"'>Movies</button><button type="button" class="infobtn" onclick='window.location.href = "./teevee.html"'>TV Shows</button>
 </div>
 
 </body>

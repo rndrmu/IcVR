@@ -20,15 +20,6 @@ visibility:visible;
   border: 1000px magenta;
 }
 
-    body, html {
-      height:100%;
-      padding: 0px;
-      margin:0px;
-      overflow: hidden;
-      background-color: #22252a;
-      overflow: hidden;
-    }
-
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */

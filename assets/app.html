@@ -4,6 +4,8 @@
   		      <script>window.$ = window.jQuery = require('jquery');</script>
             <script>window.$ = window.jQuery = require('./js/jquery.js');</script>
 <!--All the needed external shit-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/prettify/prettify.css">
@@ -14,13 +16,14 @@
     	<link rel="stylesheet" type="text/css" href="./css/exo.css">
     	<script src="./js/exo.js"></script>
         <script type="text/javascript" src="./js/jquery.js"></script>
-        <script type="text/javascript" src="./js/yeetHAW.js"></script>
+        <script type="text/javascript" src="./js/mv.uncompressed.js"></script>
         <link rel="stylesheet" type="text/css" href="./css/howdy.css">
         <script type="text/javascript" src="./js/notesLaPatch.js"></script>
+
 <!--All the needed external shit-->
 
-   <div id="title-bar">
-      <div id="title">IcyViewR 2.5.0</div>
+   <div id="title-bar" style="position: -webkit-sticky; position: sticky; top: 0; background-color: #22252a;">
+      <div id="title">IcyViewR 3.0.0</div>
       <div id="title-bar-btns">
         <input class="srchbx" id="postersearch" type="text" placeholder="Search..." /> <button class="dick fa fa-search" onclick="getposters()"></button>
         <button id="min-btn"><b>-</b></button>
@@ -44,10 +47,22 @@
   <!-- Modal content -->
   <div class="muuh">
     <div class="head2">
-
+<span class="close">&times;</span>
       <h2 id="notneeded" class="squigga">Patch Notes</h2>
     </div>
     <div class="yEEt">
+                 <p class="squigga2">New in v.3.0</p>
+      <ul class="niggward">
+          <li>Added Live-TV Streams</li>
+                <ul>
+                    <li>Unfortunately this is still in german only, but ill add more countries in later updates</li>
+                </ul>
+           <li>Added an Online (Webbrowser) Version</li>
+                <ul>
+                    <li>The domain for this, is https://icyv.gq. But add following exceptions/Static Filters to your AdBlocker <code>@@||jsonip.com^$script,domain=icyv.gq</code> <code>@@||api.ipify.org^$xmlhttprequest,domain=icyv.gq</code> </li>
+                </ul>
+      </ul>
+
                 <p class="squigga2">New in v.2.5</p>
       <ul class="niggward">
           <li>Added a TV-series mode</li>
@@ -86,6 +101,7 @@
   <!-- Modal content -->
   <div class="muuh">
     <div class="yEEt">
+      <span class="close">&times;</span>
       <p class="niggward">
         IcyViewR
 Copyright (C) 2019 duckforceone.
@@ -134,26 +150,18 @@ The above copyright notice and this permission notice shall be included in all c
 
 </div>
 
-<script type="text/javascript">
 
-</script>
 </body>
 </html>
 
 </body>
 
-<script type="application/javascript" src="http://ipinfo.io/?format=jsonp&callback=getIP"></script>
-<script type="application/javascript">
-  function getIP(json) {
-    alert(json.ip, 'IP ADRESS');
-  }
-</script>
-
 
 
 
   <div class="downsides">
- <button type="button" class="infobtn">IcyViewR (c) 2019 duckforce1</button><button type="button" class="infobtn" onclick="about()">About</button><button type="button" id="licensebtn" class="infobtn" onclick="newlicense()">View License</button><button type="button" class="infobtn" id="patchbtn" onclick="patchMe()">Patch Notes</button><button type="button" class="infobtn" onclick='window.location.href = "teevee.html"'>Change to TV Shows</button><button type="button" class="infobtn" onclick='getIP()'>View IP</button>
+    
+ <button type="button" class="infobtn">IcyViewR (c) 2019 duckforce1</button><button type="button" class="infobtn" onclick="about()">About</button><button type="button" id="licensebtn" class="infobtn" onclick="newlicense()">View License</button><button type="button" class="infobtn" id="patchbtn" onclick="patchMe()">Patch Notes</button><button type="button" class="infobtn" onclick='window.location.href = "teevee.html"'>TV Shows</button><button type="button" class="infobtn" onclick='window.location.href = "./live_GER.html"'>Live TV</button>
 </div>
 
 </body>
