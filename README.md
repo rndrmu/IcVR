@@ -19,7 +19,7 @@ utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://elec
 ## What's working
 - _You can search for and watch movies, TV-Shows or Live-TV via IPTV_
 - the UI
-- Ad-Blocking with <a href="https://pi-hole.net/">Pi-Hole (Recommended)</a>, <a href="https://adguard.com/de/adguard-dns/overview.html#instruction">AdGuard DNS (Not Recommended)</a> or via Hosts file [Like This](https://someonewhocares.org/hosts/hosts)
+- Ad-Blocking with <a href="https://pi-hole.net/">Pi-Hole (Recommended)</a>, <a href="https://adguard.com/en/adguard-dns/overview.html#instruction">AdGuard DNS (Not Recommended)</a> or via Hosts file [Like This](https://someonewhocares.org/hosts/hosts)
 ## What is still todo:
 - Android Builds
 ## What's planned
