@@ -16,14 +16,12 @@
 IcyViewR is aimed to be a user-friendly Multimedia entertainment center similar to <a href="https://github.com/xbmc/xbmc">Kodi</a>
 utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://electronjs.org">Electron</a> to build the UI.
 
-## What's working
-- _You can search for and watch movies, TV-Shows or Live-TV via IPTV_
-- the UI
-- Ad-Blocking with <a href="https://pi-hole.net/">Pi-Hole (Recommended)</a>, <a href="https://adguard.com/en/adguard-dns/overview.html#instruction">AdGuard DNS (Not Recommended)</a> or via Hosts file [Like This](https://someonewhocares.org/hosts/hosts)
-## What is still todo:
-- Android Builds
-## What's planned
-- Native AdBlocking
+| Working  | Todo           |   
+| ------------- |:-------------:|
+| _You can search for and watch movies, TV-Shows or Live-TV via IPTV_      | Android Builds |  |
+| Ad-Blocking with [Pi-Hole (Recommended)](https://pi-hole.net)[AdGuard DNS (Not Recommended)](https://adguard.com/en/adguard-dns/overview.html#instruction) or [via a Hosts file Like This](https://someonewhocares.org/hosts/hosts)     | Native AdBlocking      |  
+
+
 ## Usage
 1. Download .zip of this Repo
 2. install <a href="https://nodejs.org/en/download/">Node.js</a>
