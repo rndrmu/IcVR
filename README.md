@@ -23,8 +23,8 @@ utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://elec
 
 
 ## Usage
-1. Download .zip of this Repo
-2. install <a href="https://nodejs.org/en/download/">Node.js</a>
+1. [Download the master.zip of this Repo](https://github.com/duckforceone/IcyViewR/archive/master.zip)
+2. Install [Node.js](https://nodejs.org/en/download/)
 3. 
      - On Windows: Right Shift + Rightclick Open Powershell Window
       - On Linux: Open Terminal and navigate to folder
