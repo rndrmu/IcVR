@@ -1,10 +1,13 @@
+# ⚠️The Development of the Desktop client is currently paused until i can find a method to block ads effectively
+### In the meantime please use [The Web Version](https://icyv.gq)
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 <br>
 <br>
 <a href="https://github.com/floprock/IcyViewR/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/badge/License-Open_Source_with_restrictions-blue.svg?style=for-the-badge"></a><a href="https://github.com/floprock/IcyViewR/releases/latest">
 <br>
      <br>
-<img alt="Release" src="https://img.shields.io/badge/Latest%20Version-3.0.0-blue.svg?style=for-the-badge"></a>
+<img alt="Release" src="https://img.shields.io/badge/Latest%20Stable%20Version-3.0.0-blue.svg?style=for-the-badge"></a> 
+<img alt="Release" src="https://img.shields.io/badge/Latest%20Beta%20Version-4.0.0-blue.svg?style=for-the-badge"></a>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 # IcyViewR [![Build Status](https://travis-ci.org/floprock/IcyViewR.svg?branch=master)](https://travis-ci.org/duckforceone/IcyViewR)[![Build status](https://ci.appveyor.com/api/projects/status/enx409k96ywgt0nd?svg=true)](https://ci.appveyor.com/project/sineflex/icyviewr)
