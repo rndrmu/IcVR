@@ -7,6 +7,8 @@
 <br>
      <br>
 <img alt="Release" src="https://img.shields.io/badge/Latest%20Stable%20Version-3.0.0-blue.svg?style=for-the-badge"></a> 
+<a href="https://github.com/duckforceone/IcyViewR/tree/v4.0.0-beta">
+
 <img alt="Release" src="https://img.shields.io/badge/Latest%20Beta%20Version-4.0.0-blue.svg?style=for-the-badge"></a>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
