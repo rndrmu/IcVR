@@ -7,15 +7,7 @@ body{ min-height:100%; padding:0; margin:0; position:relative; }
 .infobtn {
 	border: none;
 	background-color: darkgrey;
-}
-.downsides {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 150%;
-  background-color: darkgrey;
-    color: black;
-    text-align: left;
+  font-family: 'Ubuntu', italic;
 }
 
 .dick {
@@ -39,14 +31,6 @@ background-color: rgb(60, 60, 60);
 }
 
 
-body {
-  background-color: rgb(60, 60, 60);
- transition: background-color .5s;
- position: relative;
- overflow: hidden;
-}
-
-
 
 #main {
     transition: margin-left .5s;
@@ -60,12 +44,29 @@ body {
 
 .head {
 	margin: auto;
-    border: 3px solid #73AD21;
-
-    background: #73AD21;
+    background: #1f1f1f;
     padding: 10px;
     text-align: center;
+    color: white;
 }
+
+.removemepls {
+	background: #1f1f1f;
+color: white;
+}
+
+.nigga {
+
+  margin-bottom: 5px;
+  margin-right: 3px;
+}
+
+.nigga:hover {
+
+border: 10px darkred;
+
+}
+
 
 .nigward {
   color: black;
@@ -127,6 +128,7 @@ body {
 
 #title-bar {
   -webkit-app-region: drag;
+
   height: 32px; 
   padding: 2px;
     margin: 0px;  
@@ -135,10 +137,11 @@ font-family: "Segoe UI", sans-serif;
 }
 
 #title {
-  position: fixed;
+
   top: 0px;
   left: 12px; 
   font-size: 16px;
+  font-family: 'Ubuntu', bold italic;
 }
 
 #title-bar-btns {
@@ -232,24 +235,20 @@ float: center;
 
 }
 
-#wrapper:hover {
-visibility:visible;
-  border: 1000px magenta;
-}
+
 
     body, html {
       height:100%;
       padding: 0px;
       margin:0px;
-      overflow: hidden;
-      background-color: #22252a;
+      background-color: #454545;
     }
 
 /* The Modal (background) */
-.modal {
+.model {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 10; /* Sit on top */
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
@@ -262,9 +261,10 @@ visibility:visible;
 }
 
 /* Modal Content */
-.modal-content {
+.model-content {
   position: relative;
-  background-color: #fefefe;
+  background-color: #1f1f1f;
+  color: white;
   margin: auto;
   padding: 0;
   border: 1px solid #888;
@@ -273,7 +273,7 @@ visibility:visible;
   -webkit-animation-name: animatetop;
   -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
-      border-radius: 75px 25px;
+
   animation-duration: 0.4s
 }
 

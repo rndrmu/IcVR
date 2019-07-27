@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+            <script>window.$ = window.jQuery = require('jquery');</script>
+
+  <script src="https://kit.fontawesome.com/24bfc12872.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/exo.css">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <div id="title-bar" style="position: -webkit-sticky; position: sticky; top: 0; background-color: #1f1f1f; ">
+      <div id="title">IcyViewR 4.0.0 - CANARY</div>
+      <div id="title-bar-btns">
+        <button id="min-btn"><b>-</b></button>
+        <button id="max-btn"><b>+</b></button>
+        <button id="close-btn"><b>x</b></button>
+      </div>
+    </div>
+
+<style>
+
+a {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}.sidenav {
+  margin-top: 25px;
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1f1f1f;
+  overflow-x: hidden;
+  padding-top: 20px;
+  box-shadow: 10px 1px 18px #403d37;
+}.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #d6d6d6;
+  display: block;
+}.sidenav a:hover {
+  color: darkgrey; 
+}.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">IcyViewR Redesign</h4>
+        </div>
+        <div class="modal-body">
+          <p>Redesigned using: <br><br> - Bootstrap <br> - FontAwesome</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+<!-- Modal -->
+<div id="mv" class="model" >
+
+  <!-- Modal content -->
+  <div class="model-content">
+    <div class="head">
+      <span class="close">&times;</span>
+      <h2 id="mvName" class="squigga"></h2>
+    </div>
+    <div class="yEEt">
+      <p id="mvStreamLink"></p>
+      <span id="mvDesc" class="nigward"></span>
+    </div>
+    <div class="head">
+      <h3 id="mvTriviaNShit"></h3>
+    </div>
+  </div>
+
+</div>
+
+
+</head>
+<body>
+    <script type="text/javascript" src="get.tvm.js"></script>
+<div id="middle">
+  <div class="sidenav">
+    <a data-toggle="modal" data-target="#myModal"><center><img data-toggle="tooltip" title="About" data-placement="bottom" src="https://raw.githubusercontent.com/duckforceone/a-bunch-of-web-files/master/icon_rh.jpg" width="50px" height="50px"></center></a><button style="float: right;" type="button" class="btn btn-secondary fa fa-search" data-container="body" data-html="true" data-toggle="popover" data-placement="right" data-content='<input class="" id="postersearch" type="text" placeholder="Search..." /> <button class="fa fa-search" onclick="getposters()"></button>'>
+</button>
+    <br>
+    <br>
+    <a onclick="return getCurrentlyPlaying()"><center><i class="fas fa-ticket-alt"></i><br>In Cinemas</center></a>
+    <br><br>
+    <a onclick="return getTopRated()"><center><i class="fas fa-trophy"></i><br>Top Rated Movies</center></a>
+    <br><br>
+    <a onclick='return getPopular()'><center><i class="fas fa-play"></i><br>Most Popular Movies</center></a>
+    <br><br>
+    <a onclick="return getTopRatedTV()"><center><i class="fas fa-trophy"></i><br>Top Rated TV Shows</center></a>
+    <br><br>
+    <a onclick='return getPopularTV()'><center><i class="fas fa-play"></i><br>Most Popular TV Shows</center></a>
+    <br><br><br>
+    <a onclick='return getLiveTV()'><center><i class="fas fa-tv"></i><br>Live TV</center></a>
+<i class="fas fa-tv"></i>
+</div>
+<div class="main">
+
+<div class="imges"></div>
+  
+      <video id="video" controls="show" width="1024" height="576"></video>
+      <select id="mebuttons" onchange="chanChange()">
+
+</div>
+</div>
+   <script type="text/javascript">
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip(); 
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+});
+
+function chanChange() {
+  var x = document.getElementById("mebuttons").value;
+  getstream(x);
+}
+function getstream(srcvideo) {
+  var video = document.getElementById('video');
+  if(Hls.isSupported()) {
+    var hls = new Hls();
+    hls.loadSource(srcvideo);
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MANIFEST_PARSED,function() {
+      video.play();
+  });
+ }
+ 
+  else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+    video.src = 'https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8';
+    video.addEventListener('loadedmetadata',function() {
+      video.play();
+    });
+  }
+}
+</script>
+
+<script>
+  require('./js/renderer.js');
+</script>
+
+</body>
+</html>
