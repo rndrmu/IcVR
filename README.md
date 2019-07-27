@@ -12,7 +12,7 @@
 <img alt="Release" src="https://img.shields.io/badge/Latest%20Beta%20Version-Stable_:)-blue.svg?style=for-the-badge"></a>
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
-# IcyViewR [![Build Status](https://travis-ci.org/floprock/IcyViewR.svg?branch=master)](https://travis-ci.org/duckforceone/IcyViewR)[![Build status](https://ci.appveyor.com/api/projects/status/enx409k96ywgt0nd?svg=true)](https://ci.appveyor.com/project/sineflex/icyviewr)
+# IcyViewR [![Build Status](https://travis-ci.org/duckforceone/IcyViewR.svg?branch=master)](https://travis-ci.org/duckforceone/IcyViewR)[![Build status](https://ci.appveyor.com/api/projects/status/enx409k96ywgt0nd?svg=true)](https://ci.appveyor.com/project/sineflex/icyviewr)
 
 <br>
 <img alt="GitHub license" src="https://www.themoviedb.org/assets/2/v4/logos/408x161-powered-by-rectangle-green-bb4301c10ddc749b4e79463811a68afebeae66ef43d17bcfd8ff0e60ded7ce99.png">
