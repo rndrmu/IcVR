@@ -1,4 +1,4 @@
-### ⚠️The Development of the Desktop client is cancelled cuz electron bad
+### ⚠️The Development of the Desktop client is cancelled cuz electron bad  <sup>and all these fucking cancerous ads</sup>
 #### ~In the meantime p~Please use [The Web Version](https://icyv.gq) or, if you don't like material design you can also use [the old version](https://horizon.projects.duckforceone.gq/)
 
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
