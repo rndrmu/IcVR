@@ -24,3 +24,6 @@ Ublock exception list:
 
 
 # This product uses the TMDb API but is not endorsed or certified by TMDb.
+
+# Is there a meaning to the name?
+<sup>Yes, it stands for "I see videos (Reloaded [<-Because it is a fork of a previous thingy of mine])"</sup>
