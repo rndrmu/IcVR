@@ -1,3 +1,7 @@
+Ublock exception list:
+<code>@@||jsonip.com^$script,domain=icyv.gq</code> 
+<code>@@||api.ipify.org^$xmlhttprequest,domain=icyv.gq</code>
+
 ### ⚠️The Development of the Desktop client is cancelled cuz electron bad  <sup>and all these fucking cancerous ads</sup>
 #### ~In the meantime p~Please use [The Web Version](https://icyv.gq) or, if you don't like material design you can also use [the legacy version](https://horizon.projects.duckforceone.gq/) <sup>It will rarely get updates tho :)</sup>
 
@@ -10,9 +14,7 @@
 ~IcVR is aimed to be a user-friendly Multimedia entertainment center similar to <a href="https://github.com/xbmc/xbmc">Kodi</a>
 utilising <a href="https://nodejs.org/en/">Node.js</a> and <a href="https://electronjs.org">Electron</a> to build the UI.~
 
-Ublock exception list:
-<code>@@||jsonip.com^$script,domain=icyv.gq</code> 
-<code>@@||api.ipify.org^$xmlhttprequest,domain=icyv.gq</code>
+
 
 
 
