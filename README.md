@@ -1,4 +1,4 @@
-<p align="center"><img width="75px" height="75px" src="https://raw.githubusercontent.com/duckforceone/a-bunch-of-web-files/master/icon_rh.jpg"><h3 align="center">IcVR Project</h3></p>
+<p align="center"><img width="75px" height="75px" src="https://raw.githubusercontent.com/duckforceone/a-bunch-of-web-files/master/icon_rh.jpg"><h3 align="center">IcVR/DuckyTV Project</h3></p>
 
 <p align="center"><b>IcVR</b> <br><img src="https://img.shields.io/github/license/duckforceone/IcVR?style=for-the-badge"><br><b>IcVR One/DuckyTV</b><br><img src="https://img.shields.io/badge/License-Proprietary_during_alpha_phase-orange?style=for-the-badge"></p>
 
