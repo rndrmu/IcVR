@@ -21,4 +21,4 @@ and later revisions
 <sup>Yes, it stands for "I see videos (Reloaded [<-Because it is a fork of a previous thingy of mine])"</sup>
 
 # Monetary Support
-If you wish to support my work, please donate to the [Union of concerned Scientists](https://secure.ucsusa.org/onlineactions/dR5QqmX2uUCLCFD1KkVEzg2?MS=topnav), [The Global Footprint Network](https://connect.clickandpledge.com/w/Form/1bfb96c9-459f-4761-9b64-39f722549ec2) or [The Earth Day Network](https://earthdaynetwork.salsalabs.org/maindonationform/index.html)
+If you wish to support my work, please donate to [The Union of concerned Scientists](https://secure.ucsusa.org/onlineactions/dR5QqmX2uUCLCFD1KkVEzg2?MS=topnav), [The Global Footprint Network](https://connect.clickandpledge.com/w/Form/1bfb96c9-459f-4761-9b64-39f722549ec2) or [The Earth Day Network](https://earthdaynetwork.salsalabs.org/maindonationform/index.html) to keep the server cool. Thank You.:)
