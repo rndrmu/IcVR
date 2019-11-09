@@ -114,6 +114,14 @@ border: 10px darkred;
   color: black;
 }
 
+.streambtn:visited {
+  background-color: black;
+}
+
+.streambtn:focus {
+  background-color: grey;
+}
+
 .txtbox {
   width: 80%;
   margin-bottom: 2px;
