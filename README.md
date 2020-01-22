@@ -1,6 +1,6 @@
 ## ATTENTION: DuckyTV is in the process of a rewrite from ground up, with:
 ### - better documentation
-### - less ugly code
+### - less ugly code <sup>it's basically just that ¯\\\_(ツ)_/¯</sup> 
 ### - tons of new features (maybe)
 <p align="center"><img width="75px" height="75px" src="https://raw.githubusercontent.com/duckforceone/a-bunch-of-web-files/master/icon_rh.jpg"><h3 align="center">IcVR/DuckyTV Project</h3></p>
 
