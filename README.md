@@ -1,4 +1,4 @@
-## ATTENTION: DuckyTV is in the process of a rewrite from ground up, with:
+## ATTENTION: DuckyTV is in the process of a rewrite from ground up with:
 ### - better documentation
 ### - less ugly code <sup>it's basically just that ¯\\\_(ツ)_/¯</sup> 
 ### - tons of new features (maybe)
