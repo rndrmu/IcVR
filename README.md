@@ -1,7 +1,7 @@
-## ATTENTION: DuckyTV is in the process of a rewrite from ground up with:
-### - better documentation
-### - less ugly code <sup>it's basically just that ¯\\\_(ツ)_/¯</sup> 
-### - tons of new features (maybe)
+#### ATTENTION: DuckyTV is in the process of a rewrite from ground up with:
+##### - better documentation
+##### - less ugly code <sup>it's basically just that ¯\\\_(ツ)_/¯</sup> 
+##### - tons of new features (maybe)
 <p align="center"><img width="75px" height="75px" src="https://raw.githubusercontent.com/duckforceone/a-bunch-of-web-files/master/icon_rh.jpg"><h3 align="center">IcVR/DuckyTV Project</h3></p>
 
 <p align="center"><b>IcVR</b> <br><img src="https://img.shields.io/github/license/duckforceone/IcVR?style=for-the-badge"><br><b>DuckyTV</b><br><img src="https://img.shields.io/badge/License-AGPL--3.0-orange?style=for-the-badge"></p>
