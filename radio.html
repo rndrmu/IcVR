@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="ducc.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:400i|Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title>duccTV ― Radio</title>
+  </head>
+  <body>
+          <div class="">
+            <input type="text" name="" value="" id="searchbx"> <span> <button type="button" name="button" onclick="statSearch()">Search!</button> </span>
+          </div>
+          <center>
+            <div id="channel-player">
+                  <div class="channel" id="current-station"> SAMPLE STATION </div>
+                  <span class="player"></span>
+            </div>
+            </center>
+              <div class="TopList"></div>
+  </body>
+</html>
+
+<script>
+
+$(document).ready(function () {
+
+
+  	navigator.__defineGetter__('userAgent', function () {
+      return "IcVR-RadioPlugin/Beta"
+  });
+  $(".statbtn").remove();
+  	var stats = " ";
+  	var url = "https://www.radio-browser.info/webservice/json/stations/topvote/25";
+
+  		$.getJSON(url, function(data){
+
+  				$.each(data, function(i, d) {
+
+  						// var statid = JSON.stringify(d.stationuuid);
+
+  						stats += ("<button class=\"statbtn\" onclick=\"playStation('"+d.stationuuid+"')\">"+"<img width=\"25px\" height=\"25px\" src=\""+d.favicon+"\""+"<p>"+d.name+"</p>"+"</button>");
+
+  				});
+  				$('.TopList').append(stats).html();
+  		});
+
+
+
+});
+
+
+function playStation(stationid) {
+  var url = "https://www.radio-browser.info/webservice/v2/json/url/"+stationid;
+  $.getJSON(url, function(data) {
+    $(".player").html("<br><audio src= "+data.url+" controls autoplay></audio>");
+    $('#current-station').html(data.name);
+  });
+}
+
+function statSearch() {
+  $(".statbtn").remove();
+  var term = document.getElementById('searchbx').value;
+  var url = "https://www.radio-browser.info/webservice/json/stations/byname/"+term;
+  var searchreturn = " ";
+  $.getJSON(url, function(data) {
+    $.each(data, function(i, d) {
+      searchreturn += ("<button class=\"statbtn\" onclick=\"playStation('"+d.stationuuid+"')\">"+"<img width=\"25px\" height=\"25px\" src=\""+d.favicon+"\""+"<p>"+d.name+"</p>"+"</button>");
+    });
+    $('.TopList').append(searchreturn).html();
+  });
+}
+
+</script>

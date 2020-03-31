@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="newgetter.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="ducc.css">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Cantarell:400i|Great+Vibes&display=swap" rel="stylesheet">
+
+	<title>DUCKYTV ~ dev build ~ </title>
+</head>
+<body>
+	<nav class="navbar navbar-default"  data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">DuckyTV - Beta</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li ><a data-toggle="modal" data-target="#about">about</a></li>
+      <li><a data-toggle="modal" data-target="#myModal">TV</a></li>
+      <li><a data-toggle="modal" data-target="#myModalMovie">Movie</a></li>
+      <li><a onclick="radioPlay()">Radio</a></li>
+		  <input type="text" name="" placeholder="Search" style="float:right;" id="searchbox"><button type="button" name="button" id="searchbtn" onclick="Search()"> &#x1F50D; </button>
+			<li><a data-toggle="modal" data-target="#settings">Settings</a></li>
+			<li><a href="https://duckytv-872.freshstatus.io/" target="_blank">Server Status</a></li>
+    </ul>
+  </div>
+</nav>
+
+<center><div class="marquee" style="Width: 50%; background-color: purple; border-radius: 15px; font-size:20px;">
+	<marquee> +++ NEW: Lights Off! - A better Dark Mode has arrived +++ #StayHomeSaveLives - Don't go outside if it's not necessary. Watch DuckyTV instead! #flattenthecurve +++ </marquee>
+</div></center>
+
+<center><div class="imges"></div></center>
+</body>
+
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Popular, Top Rated or Live?</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+    <!-- Modal body -->
+      <div class="modal-body">
+        <button type="button" name="button" onclick="getPopularTV();" >Popular TV Shows</button>
+				<button type="button" name="button" onclick="getTopRatedTV();">Top Rated TV Shows</button>
+				<button type="button" name="button" onclick="alert('NOT IN THE ALPHA >:( ')">Live TV <i>EXPERIMENTAL!</i> </button>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="myModalMovie">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Recent movies, Popular movies or Top Rated?</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+    <!-- Modal body -->
+      <div class="modal-body">
+        <button type="button" name="button" onclick="getCurrentlyPlaying();">In Cinemas</button>
+				<button type="button" name="button" onclick="getTopRated();">Top Rated Movies</button>
+				<button type="button" name="button" onclick="getPopular();">Most Popular Movies</button>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="about">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">ABOUT DUCKYTV - BETA V0.2.1</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+    <!-- Modal body -->
+      <div class="modal-body">
+        <i>
+						DuckyTV is a Webapp to stream Movies/TV Shows/(Web)Radio.
+						<br>
+					 	To achieve this, it uses a so called 'scraper' and different APIs which get most of the desired content.
+					 	<br>
+					 	Streaming is a grey area, the more you look into it, the more complicated it gets.
+						<br>
+						<br>
+						The Core of DuckyTV is 100% Open-Source and can be viewed @ github.com/duckforceone/IcVR/tree/2.0-beta
+						<br>
+						USED LIBRARIES:
+						<br>
+							<ul>
+								<li>jQuery</li>
+								<li>Bootstrap</li>
+								<li>TMDB API</li>
+								<li>videospider.in API</li>
+								<li>radio-browser.info API</li>
+								<li>My own JSON Compilation of German TV Stations</li>
+								<li>hls.js for the .m3u decompilation</li>
+							</ul>
+				 </i>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="settings">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Customize your experience</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+    <!-- Modal body -->
+      <div class="modal-body">
+        <span>
+								<div class="username">
+									<p>Insert a Username </p>
+									<input type="text" name="" placeholder="Username">
+								</div>
+<br>
+								<div class="">
+									<p>Amount of pages to retrieve (default: 10)</p>
+									<input type="text" id="getpages" name="" value="10" placeholder="69" disabled>
+								</div>
+				</span>
+      </div>
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div id="streamStuff" class="modalx">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+		<div class="modal-header">
+    <span class="close">&times;</span>
+    <h1 id="title">SHREK</h1><span id="info"></span>
+		 <h4 id="tagline">Super Fancy Font</h4>
+  </div>
+  <div class="modal-body">
+    <div id="iframe"></div>
+    <p id="overview">BEST MOVIE EVER MADE</p>
+		<p id="latestEpisode"></p>
+		<select id="allSeasons" class="" name="" onchange="getEpisodes()">
+			<option value="null" selected>Select</option>
+		</select>
+		<p id="allEpisodes"></p>
+  </div>
+  <div class="modal-footer">
+    <h3> &star; <span id="ratings">420/10</span></h3>
+		<h5 id="genres">  </h5>
+  </div>
+  </div>
+
+</div>
+<div class="loading_screen"><!-- Place at bottom of page --></div>
+</html>
