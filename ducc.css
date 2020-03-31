@@ -1,0 +1,207 @@
+/* The Modal (background) */
+.modalx {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Modal Header */
+.modal-header {
+ padding: 2px 16px;
+ color: black;
+}
+
+/* Modal Body */
+.modal-body {padding: 2px 16px;}
+
+/* Modal Footer */
+.modal-footer {
+ padding: 2px 16px;
+
+ color: black;
+}
+
+/* Modal Content */
+.modal-content {
+ position: relative;
+ background-color: #fefefe;
+ margin: auto;
+ padding: 0;
+ border: 1px solid #888;
+ width: 80%;
+ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+ animation-name: animatetop;
+ animation-duration: 0.4s
+}
+
+/* Add Animation */
+@keyframes animatetop {
+ from {top: -300px; opacity: 0}
+ to {top: 0; opacity: 1}
+}
+
+#tagline {
+  font-family: 'Cantarell', sans-serif;
+}
+
+.rmrfnopreserveroot {
+  margin: 5px;
+}
+
+.rmrfnopreserveroot:hover {
+  cursor: pointer;
+  border-style: solid;
+  border-color: #ff00ff;
+   transform: scale(1.25);
+}
+ body  {
+   background-color: #1f1f1f;
+   color: white;
+ }
+  .modal-content  {
+   background-color: #1f1f1f;
+   color: white;
+ }
+  select  {
+   background-color: #1f1f1f;
+   color: white;
+ }
+  button {
+   background-color: #1f1f1f;
+   color: white;
+ }
+input {
+  color: black;
+}
+
+.navbar {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+h1 { color: white; }
+h4 { color: white;  }
+a {color:white;}
+a:hover {background.color:white;}
+.modal { background-color: transparent;}
+#channel-player {
+
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#channel-player #current-station {
+    position: relative;
+    font-family: 'Roboto', bold, sans-serif;
+    font-size: 112px;
+}
+.statbtn:hover {
+    background:
+#2196F3;
+color:
+    white;
+}
+.statbtn {
+    border: 2px solid
+black;
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-left-color: black;
+background-color:
+#1f1f1f;
+color: black;
+padding: 14px 28px;
+font-size: 16px;
+cursor: pointer;
+border-color:
+#2196F3;
+color:
+    dodgerblue;
+    margin: 3px;
+}
+
+.episode:hover {
+    background:
+#2196F3;
+color:
+    white;
+}
+.episode {
+    border: 2px solid black;
+    border-top-color: black;
+    border-right-color: black;
+    border-bottom-color: black;
+    border-left-color: black;
+background-color:
+#1f1f1f;
+color: black;
+padding: 14px 28px;
+font-size: 12px;
+cursor: pointer;
+border-color:
+#2196F3;
+color:
+    dodgerblue;
+    margin: 3px;
+}
+.loading_screen {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: #000000
+                url('glitch-logo-v2-white.gif')
+                50% 50%
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading .loading_screen {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .loading_screen {
+    display: block;
+}
