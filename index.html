@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="newgetter.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -12,20 +12,22 @@
 	<title>DUCKYTV ~ dev build ~ </title>
 </head>
 <body>
-	<nav class="navbar navbar-default"  data-spy="affix" data-offset-top="197">
+	<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">DuckyTV - Beta</a>
+      <a class="navbar-brand" id="stats" href="#">Hello  <span id="name"></span> 👋</a>
     </div>
+		<center>
     <ul class="nav navbar-nav">
-      <li ><a data-toggle="modal" data-target="#about">about</a></li>
-      <li><a data-toggle="modal" data-target="#myModal">TV</a></li>
-      <li><a data-toggle="modal" data-target="#myModalMovie">Movie</a></li>
-      <li><a onclick="radioPlay()">Radio</a></li>
-		  <input type="text" name="" placeholder="Search" style="float:right;" id="searchbox"><button type="button" name="button" id="searchbtn" onclick="Search()"> &#x1F50D; </button>
-			<li><a data-toggle="modal" data-target="#settings">Settings</a></li>
-			<li><a href="https://duckytv-872.freshstatus.io/" target="_blank">Server Status</a></li>
+      <li ><a data-toggle="modal" id="mob"  data-target="#about">about</a></li>
+      <li><a data-toggle="modal" id="mob" data-target="#myModal">TV</a></li>
+      <li><a data-toggle="modal" id="mob" data-target="#myModalMovie">Movie</a></li>
+      <li><a onclick="radioPlay()" id="mob" id="nomobile">Radio</a></li>
+		  <input type="text" name="" placeholder="Search"  id="searchbox"><button type="button" name="button" id="searchbtn" onclick="Search()"> &#x1F50D; </button>
+			<li><a data-toggle="modal" id="mob" data-target="#settings">Settings</a></li>
+			<li><a id="nomobile" href="https://duckytv-872.freshstatus.io/" target="_blank">Server Status</a></li>
     </ul>
+	</center>
   </div>
 </nav>
 
@@ -47,9 +49,9 @@
       </div>
     <!-- Modal body -->
       <div class="modal-body">
-        <button type="button" name="button" onclick="getPopularTV();" >Popular TV Shows</button>
-				<button type="button" name="button" onclick="getTopRatedTV();">Top Rated TV Shows</button>
-				<button type="button" name="button" onclick="alert('NOT IN THE ALPHA >:( ')">Live TV <i>EXPERIMENTAL!</i> </button>
+        <button class="stream" type="button" name="button" onclick="getPopularTV();" >Popular TV Shows</button>
+				<button class="stream" type="button" name="button" onclick="getTopRatedTV();">Top Rated TV Shows</button>
+				<button class="stream" type="button" name="button" onclick="alert('ERROR-404: Not Available ')">Live TV  </button>
       </div>
       <!-- Modal footer -->
       <div class="modal-footer">
@@ -58,6 +60,19 @@
     </div>
   </div>
 </div>
+
+<div id="dashboard" class="dashboard">
+
+  <!-- Modal content -->
+  <div class="dash-content">
+		  <h4 class="modal-title">Hi <span id="name"></span>, this is your stats page :) </h4>
+    <span class="close">&times;</span>
+    <p> <i>This is not finished :(</i> </p>
+  </div>
+
+</div>
+
+
 
 <div class="modal" id="myModalMovie">
   <div class="modal-dialog">
@@ -69,9 +84,9 @@
       </div>
     <!-- Modal body -->
       <div class="modal-body">
-        <button type="button" name="button" onclick="getCurrentlyPlaying();">In Cinemas</button>
-				<button type="button" name="button" onclick="getTopRated();">Top Rated Movies</button>
-				<button type="button" name="button" onclick="getPopular();">Most Popular Movies</button>
+        <button class="stream" type="button" name="button" onclick="getCurrentlyPlaying();">In Cinemas</button>
+				<button class="stream" type="button" name="button" onclick="getTopRated();">Top Rated Movies</button>
+				<button class="stream" type="button" name="button" onclick="getPopular();">Most Popular Movies</button>
       </div>
       <!-- Modal footer -->
       <div class="modal-footer">
@@ -99,7 +114,7 @@
 					 	Streaming is a grey area, the more you look into it, the more complicated it gets.
 						<br>
 						<br>
-						The Core of DuckyTV is 100% Open-Source and can be viewed @ github.com/duckforceone/IcVR/tree/2.0-beta
+						The Core of DuckyTV is 100% Open-Source and can be viewed @ github.com/duckforceone/IcVR
 						<br>
 						USED LIBRARIES:
 						<br>
@@ -136,7 +151,7 @@
         <span>
 								<div class="username">
 									<p>Insert a Username </p>
-									<input type="text" name="" placeholder="Username">
+									<input type="text" name="" placeholder="Username" id="username_field">
 								</div>
 <br>
 								<div class="">
@@ -147,7 +162,7 @@
       </div>
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-success" data-dismiss="modal">Save</button>
+        <button type="button" class="btn btn-success" onclick="setUName()">Save</button>
       </div>
     </div>
   </div>
@@ -177,7 +192,9 @@
 		<h5 id="genres">  </h5>
   </div>
   </div>
-
 </div>
+
+
+
 <div class="loading_screen"><!-- Place at bottom of page --></div>
 </html>

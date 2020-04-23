@@ -1,13 +1,44 @@
 $(document).ready(function() {
+	var user = localStorage.getItem('settings.user');
+	$('#name').html(user);
+
+
+
+
 	console.log('DTV (V1.3) | made by ducc1#1999');
 	$body = $("body");
+	var modal = document.getElementById("dashboard");
+	window.onclick = function(event) {
+		if (event.target == modal) {
+			modal.style.display = "none";
+		}
+	}
+
+$("#stats").click(function() {
+	document.getElementById("dashboard").style.display = "block";
+
+});
+
+
 	var input = document.getElementById("searchbox");
 input.addEventListener("keyup", function(event) {
 	if (event.keyCode === 13) {
 	 event.preventDefault();
 	 document.getElementById("searchbtn").click();
 	}
+
+
+				if (localStorage.getItem("settings.user") === null) {
+						localStorage.setItem('settings.user', ' ');
+				}
+
+
+
+
 });
+
+
+
 $(document).on({
 
   ajaxStart: function() { $body.addClass("loading"); },
@@ -245,3 +276,8 @@ function Search() {
 function radioPlay() {
 	window.open('./radio.html', "_blank", 'duccTV - THE BEST STREAMING ON THE PLANET','width=400,height=350');
 }
+function setUName() {
+	var temp = document.getElementById("username_field").value;
+	localStorage.setItem('settings.user', temp);
+		$('#name').html(temp);
+};
