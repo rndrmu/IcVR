@@ -121,9 +121,10 @@ for (i = 1; i < 20; i++) {
 			var images = " ";
 			 $.each(data.results, function(i, d) {
           							images += ("<img draggable=\"false\" onclick=\"getInfoTV("+d.id +")\" class=\"rmrfnopreserveroot\" src=\"https://image.tmdb.org/t/p/w185/"+ d.poster_path +"\">");
-        			});
+        		document.location.pathname = d.id;	
+			 });
 								    $(".imges").append(images).html();
-										document.location.pathname = d.id;
+										
 			console.log("DTV > API Loaded! > popular > TV");
 	});
 }
