@@ -123,6 +123,7 @@ for (i = 1; i < 20; i++) {
           							images += ("<img draggable=\"false\" onclick=\"getInfoTV("+d.id +")\" class=\"rmrfnopreserveroot\" src=\"https://image.tmdb.org/t/p/w185/"+ d.poster_path +"\">");
         			});
 								    $(".imges").append(images).html();
+										document.location.pathname = d.id;
 			console.log("DTV > API Loaded! > popular > TV");
 	});
 }
@@ -148,6 +149,7 @@ var genres = " ";
 $.getJSON(imdbul+tmdbid+"?api_key="+apikey, function(imdb) {
 
 		$('#title').html(imdb.title);
+
 		$('#overview').html(imdb.overview);
 		$('#ratings').html(imdb.vote_average);
 		$('#tagline').html(imdb.tagline);
