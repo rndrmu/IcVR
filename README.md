@@ -2,11 +2,8 @@
 
 <p align="center"><b>IcVR</b> <br><img src="https://img.shields.io/github/license/duckforceone/IcVR?style=for-the-badge"><br><b>DuckyTV</b><br><img src="https://img.shields.io/badge/License-AGPL--3.0-orange?style=for-the-badge"></p>
 
-Ublock exception list:
-<code>@@||api6.ipify.org^$xmlhttprequest,domain=icyv.gq</code>
-
 All previous and future versions of ICVR are licensed under the AGPLv3 
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" width="200" height="100px">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/06/AGPLv3_Logo.svg" width="100" height="50px">
 and later revisions
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 <br>
