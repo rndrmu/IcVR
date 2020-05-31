@@ -148,6 +148,7 @@ var genres = " ";
 $.getJSON(imdbul+tmdbid+"?api_key="+apikey, function(imdb) {
 
 		$('#title').html(imdb.title);
+
 		$('#overview').html(imdb.overview);
 		$('#ratings').html(imdb.vote_average);
 		$('#tagline').html(imdb.tagline);
