@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="newgetter.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -19,22 +20,31 @@
     </div>
 		<center>
     <ul class="nav navbar-nav">
-      <li ><a data-toggle="modal" id="mob"  data-target="#about">about</a></li>
-      <li><a data-toggle="modal" id="mob" data-target="#myModal">TV</a></li>
-      <li><a data-toggle="modal" id="mob" data-target="#myModalMovie">Movie</a></li>
-      <li><a onclick="radioPlay()" id="mob" id="nomobile">Radio</a></li>
-		  <input type="text" name="" placeholder="Search"  id="searchbox"><button type="button" name="button" id="searchbtn" onclick="Search()"> &#x1F50D; </button>
-			<li><a data-toggle="modal" id="mob" data-target="#settings">Settings</a></li>
-			<li><a id="nomobile" href="https://duckytv-872.freshstatus.io/" target="_blank">Server Status</a></li>
+      <li ><a data-toggle="modal" id="mob"  data-target="#about"><span class="material-icons">
+info
+</span><br>About</a></li>
+      <li><a data-toggle="modal" id="mob" data-target="#myModal"><span class="material-icons">
+live_tv
+</span><br>TV Shows</a></li>
+      <li><a data-toggle="modal" id="mob" data-target="#myModalMovie"><span class="material-icons">
+theaters
+</span><br>Movies</a></li>
+      <li><a onclick="radioPlay()" id="mob" id="nomobile"><span class="material-icons">
+radio
+</span><br>Radio</a></li>
+		  <input type="text" name="" placeholder="Search"  id="searchbox"><span onclick="Search()" class="material-icons">
+search
+</span>
+			<li><a data-toggle="modal" id="mob" data-target="#settings"><span class="material-icons">
+settings
+</span><br>Settings</a></li>
+			<li><a id="nomobile" href="https://duckytv-872.freshstatus.io/" target="_blank"><span class="material-icons">
+router
+</span><br>Server Status</a></li>
     </ul>
 	</center>
   </div>
 </nav>
-
-<center><div class="marquee" style="Width: 50%; background-color: purple; border-radius: 15px; font-size:20px;">
-	<marquee> +++ NEW: Lights Off! - A better Dark Mode has arrived +++ #StayHomeSaveLives - Don't go outside if it's not necessary. Watch DuckyTV instead! #flattenthecurve +++ </marquee>
-</div></center>
-
 <center><div class="imges"></div></center>
 </body>
 
@@ -45,17 +55,27 @@
       <!-- Modal Header -->
       <div class="modal-header">
         <h4 class="modal-title">Popular, Top Rated or Live?</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <button type="button" class="close" data-dismiss="modal"><span class="material-icons">
+close
+</span></button>
       </div>
     <!-- Modal body -->
       <div class="modal-body">
-        <button class="stream" type="button" name="button" onclick="getPopularTV();" >Popular TV Shows</button>
-				<button class="stream" type="button" name="button" onclick="getTopRatedTV();">Top Rated TV Shows</button>
-				<button class="stream" type="button" name="button" onclick="alert('ERROR-404: Not Available ')">Live TV  </button>
+        <button class="stream" type="button" name="button" onclick="getPopularTV();" > <span class="material-icons">
+whatshot
+</span><br>Popular TV Shows</button>
+				<button class="stream" type="button" name="button" onclick="getTopRatedTV();"><span class="material-icons">
+emoji_events
+</span><br>Top Rated TV Shows</button>
+				<button class="stream" type="button" name="button" onclick="alert('ERROR-404: Not Available ')"><span class="material-icons">
+live_tv
+</span><br>Live TV  </button>
       </div>
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="material-icons">
+close
+</span> Close</button>
       </div>
     </div>
   </div>
@@ -84,13 +104,21 @@
       </div>
     <!-- Modal body -->
       <div class="modal-body">
-        <button class="stream" type="button" name="button" onclick="getCurrentlyPlaying();">In Cinemas</button>
-				<button class="stream" type="button" name="button" onclick="getTopRated();">Top Rated Movies</button>
-				<button class="stream" type="button" name="button" onclick="getPopular();">Most Popular Movies</button>
+        <button class="stream" type="button" name="button" onclick="getCurrentlyPlaying();"><span class="material-icons">
+movie
+</span><br>In Cinemas</button>
+				<button class="stream" type="button" name="button" onclick="getTopRated();"><span class="material-icons">
+emoji_events
+</span><br>Top Rated Movies</button>
+				<button class="stream" type="button" name="button" onclick="getPopular();"><span class="material-icons">
+whatshot
+</span><br>Most Popular Movies</button>
       </div>
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="material-icons">
+close
+</span> Close</button>
       </div>
     </div>
   </div>
@@ -101,8 +129,10 @@
     <div class="modal-content">
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">ABOUT DUCKYTV - BETA V0.2.1</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">ABOUT DUCKYTV - BETA V1.3.0</h4>
+        <button type="button" class="close" data-dismiss="modal"><span class="material-icons">
+close
+</span></button>
       </div>
     <!-- Modal body -->
       <div class="modal-body">
@@ -131,7 +161,9 @@
       </div>
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="material-icons">
+close
+</span> Close</button>
       </div>
     </div>
   </div>
@@ -162,7 +194,9 @@
       </div>
       <!-- Modal footer -->
       <div class="modal-footer">
-        <button type="button" class="btn btn-success" onclick="setUName()">Save</button>
+        <button type="button" class="btn btn-success" onclick="setUName()"><span class="material-icons">
+save
+</span> Save</button>
       </div>
     </div>
   </div>
