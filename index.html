@@ -32,7 +32,7 @@ theaters
       <li><a onclick="radioPlay()" id="mob" id="nomobile"><span class="material-icons">
 radio
 </span><br>Radio</a></li>
-		  <input type="text" name="" placeholder="Search"  id="searchbox"><span onclick="Search()" class="material-icons">
+		  <input type="text" name="" placeholder="Search"  id="searchbox"><span id="searchbtn" onclick="Search()" class="material-icons">
 search
 </span>
 			<li><a data-toggle="modal" id="mob" data-target="#settings"><span class="material-icons">
@@ -204,13 +204,16 @@ save
 
 
 <div id="streamStuff" class="modalx">
-
   <!-- Modal content -->
   <div class="modal-content">
 		<div class="modal-header">
     <span class="close">&times;</span>
-    <h1 id="title">SHREK</h1><span id="info"></span>
+    <h1 id="title">SHREK </h1><span id="info"></span>
+		<img class="bookmarkit" src="https://duckytv.gq/img/bookmark_outline.png" alt="">
 		 <h4 id="tagline">Super Fancy Font</h4>
+		 <button class="statbtn" id="strmBtn" type="button" name="button"><span class="material-icons">
+play_arrow
+</span> Get Stream!</button>
   </div>
   <div class="modal-body">
     <div id="iframe"></div>

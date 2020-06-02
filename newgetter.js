@@ -16,9 +16,17 @@ $(document).ready(function() {
 
 $("#stats").click(function() {
 	document.getElementById("dashboard").style.display = "block";
-
 });
 
+$('.bookmarkit').click(function() {
+		if ( $(this).attr('src') === 'https://duckytv.gq/img/bookmark_outline.png' ) {
+			console.log('Added '+ document.getElementById('title').innerHTML);
+			$(this).attr('src', 'https://duckytv.gq/img/bookmark.png');
+		} else {
+			console.log('Removed '+ document.getElementById('title').innerHTML);
+			$(this).attr('src', 'https://duckytv.gq/img/bookmark_outline.png');
+		}
+});
 
 	var input = document.getElementById("searchbox");
 input.addEventListener("keyup", function(event) {
@@ -31,13 +39,7 @@ input.addEventListener("keyup", function(event) {
 				if (localStorage.getItem("settings.user") === null) {
 						localStorage.setItem('settings.user', ' ');
 				}
-
-
-
-
 });
-
-
 
 $(document).on({
 
@@ -59,7 +61,7 @@ for (i = 1; i < 20; i++) {
 	$.getJSON(apiurl+"/movie/now_playing?api_key="+apikey+"&language=en-US&page="+i, function(data) {
 			var images = " ";
 			 $.each(data.results, function(i, d) {
-          							images += ("<img onclick=\"getStream(" +  d.id  +  ")\" class=\"rmrfnopreserveroot\" src=\"https://image.tmdb.org/t/p/w185/"+ d.poster_path +"\">");
+          							images += ("<img onclick=\"getInfo(" +  d.id  +  ")\" class=\"rmrfnopreserveroot\" src=\"https://image.tmdb.org/t/p/w185/"+ d.poster_path +"\">");
         			});
 								    $(".imges").append(images).html();
 			console.log("DTV > API Loaded! > now_playing");
@@ -74,7 +76,7 @@ for (i = 1; i < 20; i++) {
 	$.getJSON(apiurl+"/movie/popular?api_key="+apikey+"&language=en-US&page="+i, function(data) {
 			var images = " ";
 			 $.each(data.results, function(i, d) {
-          							images += ("<img onclick=\"getStream("+d.id +")\" class=\"rmrfnopreserveroot\" src=\"https://image.tmdb.org/t/p/w185/"+ d.poster_path +"\">");
+          							images += ("<img onclick=\"getInfo("+d.id +")\" class=\"rmrfnopreserveroot\" src=\"https://image.tmdb.org/t/p/w185/"+ d.poster_path +"\">");
         			});
 								    $(".imges").append(images).html();
 			console.log("DTV > API Loaded! > popular");
@@ -88,7 +90,7 @@ for (i = 1; i < 20; i++) {
 	$.getJSON(apiurl+"/movie/top_rated?api_key="+apikey+"&language=en-US&page="+i, function(data) {
 			var images = " ";
 			 $.each(data.results, function(i, d) {
-          							images += ("<img onclick=\"getStream("+d.id +")\" class=\"rmrfnopreserveroot\" src=\"https://image.tmdb.org/t/p/w185/"+ d.poster_path +"\">");
+          							images += ("<img onclick=\"getInfo("+d.id +")\" class=\"rmrfnopreserveroot\" src=\"https://image.tmdb.org/t/p/w185/"+ d.poster_path +"\">");
         			});
 								    $(".imges").append(images).html();
 			console.log("DTV > API Loaded! > top_rated");
@@ -135,7 +137,8 @@ function getInfo(tmdbid) {
 	// Get the modal
 var modal = document.getElementById("streamStuff");
 var span = document.getElementsByClassName("close")[0];
-
+document.getElementById('allSeasons').style.display = "none";
+document.getElementById('strmBtn').style.display = "block";
 span.onclick = function() {
 	modal.style.display = "none";
 }
@@ -147,8 +150,14 @@ span.onclick = function() {
 var genres = " ";
 $.getJSON(imdbul+tmdbid+"?api_key="+apikey, function(imdb) {
 
-		$('#title').html(imdb.title);
-
+		$('#title').html(imdb.title + ' (<i>' + imdb.original_title + '</i>)' );
+		$('.modalx').css({'background-image': 'url(https://image.tmdb.org/t/p/w185/'+ imdb.backdrop_path + ' )',
+														'background-repeat': 'no-repeat',
+														'background-position' : 'center',
+  													'background-size': 'cover',
+														'height' : '100%',
+														'filter' : 'blur(8px)',
+   												  '-webkit-filter' :'blur(0px)',})
 		$('#overview').html(imdb.overview);
 		$('#ratings').html(imdb.vote_average);
 		$('#tagline').html(imdb.tagline);
@@ -159,9 +168,16 @@ $.getJSON(imdbul+tmdbid+"?api_key="+apikey, function(imdb) {
 				$('#genres').html(genres);
 });
 modal.style.display = "block";
+
+$("#strmBtn").click(function() {
+	getStream(tmdbid);
+});
+
 }
 
 function getInfoTV(tmdbid) {
+	document.getElementById('allSeasons').style.display = "block";
+	document.getElementById('strmBtn').style.display = "none";
 	$('#allEpisodes').empty();
 	$('#allSeasons').empty();
 	$('#allSeasons').html("<option value=\"null\" selected>Select</option>");
@@ -183,7 +199,14 @@ var seasoning = " ";
 window.currID = tmdbid;
 $.getJSON(season+tmdbid+"?api_key="+apikey, function(imdb) {
 
-		$('#title').html(imdb.name);
+	$('#title').html(imdb.name);
+	$('.modalx').css({'background-image': 'url(https://image.tmdb.org/t/p/w185/'+ imdb.backdrop_path + ' )',
+													'background-repeat': 'no-repeat',
+													'background-position' : 'center',
+													'background-size': 'cover',
+													'height' : '100%',
+													'filter' : 'blur(8px)',
+													'-webkit-filter' :'blur(0px)',})
 		$('#overview').html(imdb.overview);
 		$('#ratings').html(imdb.vote_average);
 		$('#latestEpisode').html('Latest Episode: '+'S: ' + imdb.last_episode_to_air.season_number+' E: ' + imdb.last_episode_to_air.episode_number + '\n' + imdb.last_episode_to_air.name);
@@ -253,7 +276,7 @@ function Search() {
 	$.getJSON(suchen+"movie?api_key="+apikey+"&language=en-US&query="+query+"&page="+i, function(data) {
 			var images = " ";
 			 $.each(data.results, function(i, d) {
-												images += ("<img draggable=\"false\" onclick=\"getStream("+d.id +")\" class=\"rmrfnopreserveroot\" src=\"https://image.tmdb.org/t/p/w185/"+ d.poster_path +"\">");
+												images += ("<img draggable=\"false\" onclick=\"getInfo("+d.id +")\" class=\"rmrfnopreserveroot\" src=\"https://image.tmdb.org/t/p/w185/"+ d.poster_path +"\">");
 							});
 										$(".imges").append(images).html();
 			console.log("DTV > API Loaded! > search > movie");
