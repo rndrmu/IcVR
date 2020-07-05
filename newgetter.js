@@ -3,7 +3,18 @@ $(document).ready(function() {
 	$('#name').html(user);
 
 
-
+	if (location.hash.includes('movie')) {
+							var fragment = new URLSearchParams(window.location.hash.slice(1));
+							var movie_id = fragment.get("movie");
+							getInfo(movie_id);
+	console.log(movie_id);
+} else if (location.hash.includes('show')) {
+		var fragment = new URLSearchParams(window.location.hash.slice(1));
+		var tv_id = fragment.get("show");
+		getInfoTV(tv_id);
+} else {
+	console.log('Nothing to report!');
+}
 
 	console.log('DTV (V1.3) | made by ducc1#1999');
 	$body = $("body");
@@ -16,16 +27,32 @@ $(document).ready(function() {
 
 $("#stats").click(function() {
 	document.getElementById("dashboard").style.display = "block";
+		$('#close-dash').click(function() {
+				document.getElementById("dashboard").style.display = "none";
+		});
 });
-
 $('.bookmarkit').click(function() {
 		if ( $(this).attr('src') === 'https://duckytv.gq/img/bookmark_outline.png' ) {
-			console.log('Added '+ document.getElementById('title').innerHTML);
+			var xhttp = new XMLHttpRequest();
+			console.log('Added '+ document.getElementById('title').innerText);
+			let name = document.getElementById('title').innerText;
+			let domain = location.href;
+			let initiator = document.getElementById('name').innerText;
+			let desc = document.getElementById('overview').innerText;
+			let date = new Date().toISOString();
+			let thumb = $('#streamStuff').css('background-image').replace('url(',' ').replace(')',' ');
+		
 			$(this).attr('src', 'https://duckytv.gq/img/bookmark.png');
+			let rnd = Math.random()
+			localStorage.setItem(document.getElementById('title').innerHTML, 'add');
 		} else {
 			console.log('Removed '+ document.getElementById('title').innerHTML);
 			$(this).attr('src', 'https://duckytv.gq/img/bookmark_outline.png');
 		}
+
+
+
+
 });
 
 	var input = document.getElementById("searchbox");
@@ -151,6 +178,7 @@ var genres = " ";
 $.getJSON(imdbul+tmdbid+"?api_key="+apikey, function(imdb) {
 
 		$('#title').html(imdb.title + ' (<i>' + imdb.original_title + '</i>)' );
+		window.location.hash = `name=${encodeURIComponent(imdb.title)}&movie=${imdb.id}`;
 		$('.modalx').css({'background-image': 'url(https://image.tmdb.org/t/p/w185/'+ imdb.backdrop_path + ' )',
 														'background-repeat': 'no-repeat',
 														'background-position' : 'center',
@@ -197,8 +225,9 @@ var genres = " ";
 var craters = " ";
 var seasoning = " ";
 window.currID = tmdbid;
-$.getJSON(season+tmdbid+"?api_key="+apikey, function(imdb) {
 
+$.getJSON(season+tmdbid+"?api_key="+apikey, function(imdb) {
+window.location.hash = `name=${encodeURIComponent(imdb.name)}&show=${imdb.id}`;
 	$('#title').html(imdb.name);
 	$('.modalx').css({'background-image': 'url(https://image.tmdb.org/t/p/w185/'+ imdb.backdrop_path + ' )',
 													'background-repeat': 'no-repeat',
