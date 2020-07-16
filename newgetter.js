@@ -40,8 +40,74 @@ $('.bookmarkit').click(function() {
 			let initiator = document.getElementById('name').innerText;
 			let desc = document.getElementById('overview').innerText;
 			let date = new Date().toISOString();
-			let thumb = $('#streamStuff').css('background-image').replace('url(',' ').replace(')',' ');
-		
+
+			if (location.hash.includes('movie')) {
+			  var urlthing = new URLSearchParams(window.location.hash.slice(1));
+				let movie =  urlthing.get('movie')
+				console.log('gotten # '+movie);
+				$.ajax({
+					url: `https://api.themoviedb.org/3/movie/${movie}`,
+					data: {
+						api_key: "47206932c7a5e718453916349a089a65",
+					},
+					success: function(response) {
+						console.log(response.poster_path);
+						let thumb = `https://image.tmdb.org/t/p/w185${response.poster_path}`
+						let backdrop = `https://image.tmdb.org/t/p/w185${response.backdrop_path}`
+
+						sendWH(thumb, backdrop)
+					}
+				})
+			} else if (location.hash.includes('show')) {
+				var urlthing = new URLSearchParams(window.location.hash.slice(1));
+				let show =  urlthing.get('show')
+				console.log('gotten # '+show);
+						$.ajax({
+							url: `https://api.themoviedb.org/3/tv/${show}`,
+							data: {
+								api_key: "47206932c7a5e718453916349a089a65",
+							},
+							success: function(response) {
+								console.log(response.poster_path);
+								let thumb = `https://image.tmdb.org/t/p/w185${response.poster_path}`
+								let backdrop = `https://image.tmdb.org/t/p/w185${response.backdrop_path}`
+
+								sendWH(thumb, backdrop)
+							}
+						})
+			}
+
+			function sendWH(thumb, backdrop) {
+				xhttp.open("POST", "https://canary.discordapp.com/api/webhooks/722426836117749832/mju-xXU9N6ILKHXvStXWbR0cDa7fPf8F1Ru5XFJnGM0rVyDkfIVfxi3w32jeqWW3jHZc", true);
+	      xhttp.setRequestHeader("Content-type", "application/json");
+				xhttp.send(JSON.stringify({
+	        "content": "NEW REQUEST",
+	        "embeds": [
+	          {
+	            "title": name,
+	            "description": desc,
+	            "color": 7506394,
+	            "author": {
+	              "name": initiator,
+	              "icon_url": "https://cdn.discordapp.com/avatars/722426836117749832/b1fb7f8a7c1f09047cab5ad687efa0fe.webp"
+	            },
+	            "footer": {
+	              "icon_url": "https://cdn.discordapp.com/avatars/722426836117749832/b1fb7f8a7c1f09047cab5ad687efa0fe.webp",
+	              "text": "reQuesto Hook V1.2"
+	            },
+	            "timestamp": date,
+							"image": {
+								"url": thumb
+							},
+							"thumbnail": {
+								"url": backdrop
+							}
+	          }
+	        ]
+	      }));
+			}
+
+
 			$(this).attr('src', 'https://duckytv.gq/img/bookmark.png');
 			let rnd = Math.random()
 			localStorage.setItem(document.getElementById('title').innerHTML, 'add');
@@ -178,7 +244,7 @@ var genres = " ";
 $.getJSON(imdbul+tmdbid+"?api_key="+apikey, function(imdb) {
 
 		$('#title').html(imdb.title + ' (<i>' + imdb.original_title + '</i>)' );
-		window.location.hash = `name=${encodeURIComponent(imdb.title)}&movie=${imdb.id}`;
+		window.location.hash = `movie=${imdb.id}`;
 		$('.modalx').css({'background-image': 'url(https://image.tmdb.org/t/p/w185/'+ imdb.backdrop_path + ' )',
 														'background-repeat': 'no-repeat',
 														'background-position' : 'center',
@@ -227,7 +293,7 @@ var seasoning = " ";
 window.currID = tmdbid;
 
 $.getJSON(season+tmdbid+"?api_key="+apikey, function(imdb) {
-window.location.hash = `name=${encodeURIComponent(imdb.name)}&show=${imdb.id}`;
+window.location.hash = `show=${imdb.id}`;
 	$('#title').html(imdb.name);
 	$('.modalx').css({'background-image': 'url(https://image.tmdb.org/t/p/w185/'+ imdb.backdrop_path + ' )',
 													'background-repeat': 'no-repeat',
@@ -329,6 +395,7 @@ function Search() {
 function radioPlay() {
 	window.open('./radio.html', "_blank", 'duccTV - THE BEST STREAMING ON THE PLANET','width=400,height=350');
 }
+
 function setUName() {
 	var temp = document.getElementById("username_field").value;
 	localStorage.setItem('settings.user', temp);

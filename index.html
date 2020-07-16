@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172814177-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172814177-1');
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -10,7 +20,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Cantarell:400i|Great+Vibes&display=swap" rel="stylesheet">
 
-	<title>DUCKYTV ~ dev build ~ </title>
+	<title>DUCKYTV - beta</title>
 </head>
 <body>
 	<nav class="navbar navbar-default">
@@ -86,10 +96,13 @@ close
   <!-- Modal content -->
   <div class="dash-content">
 		<button type="button" class="btn btn-danger" id="close-dash"><span class="material-icons">close</span> Close</button>
-		  <h4 class="modal-title">Hi <span id="name"></span>, this is your stats page :) </h4>
-    <p> <i>This is not finished :(</i> </p>
+		  <h4 class="modal-title">Hi <span id="name"></span>, this is your Watchlist: :) </h4>
+		<div class="saved" id="savedList">
+				<center> <i>Nothing but empty space ¯\_(ツ)_/¯</i> </center>
+    </div>
   </div>
 </div>
+
 
 
 
