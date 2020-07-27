@@ -54,8 +54,15 @@ $('.bookmarkit').click(function() {
 						console.log(response.poster_path);
 						let thumb = `https://image.tmdb.org/t/p/w185${response.poster_path}`
 						let backdrop = `https://image.tmdb.org/t/p/w185${response.backdrop_path}`
-
-						sendWH(thumb, backdrop)
+						let discord_webhook = localStorage.getItem('user.webhook');
+						if (discord_webhook == null) {
+							console.log('No Webhook provided!');
+							
+						} else {
+							let webhook = localStorage.getItem('user.webhook');
+							sendWH(thumb, backdrop, webhook)
+						}
+						
 					}
 				})
 			} else if (location.hash.includes('show')) {
@@ -71,14 +78,20 @@ $('.bookmarkit').click(function() {
 								console.log(response.poster_path);
 								let thumb = `https://image.tmdb.org/t/p/w185${response.poster_path}`
 								let backdrop = `https://image.tmdb.org/t/p/w185${response.backdrop_path}`
-
-								sendWH(thumb, backdrop)
+								let discord_webhook = localStorage.getItem('user.webhook');
+								if (discord_webhook == null) {
+									console.log('No Webhook provided!');
+									
+								} else {
+									let webhook = localStorage.getItem('user.webhook');
+									sendWH(thumb, backdrop, webhook)
+								}
 							}
 						})
 			}
 
-			function sendWH(thumb, backdrop) {
-				xhttp.open("POST", "https://canary.discordapp.com/api/webhooks/722426836117749832/mju-xXU9N6ILKHXvStXWbR0cDa7fPf8F1Ru5XFJnGM0rVyDkfIVfxi3w32jeqWW3jHZc", true);
+			function sendWH(thumb, backdrop, url) {
+				xhttp.open("POST", url, true);
 	      xhttp.setRequestHeader("Content-type", "application/json");
 				xhttp.send(JSON.stringify({
 	        "content": "NEW REQUEST",
@@ -400,4 +413,6 @@ function setUName() {
 	var temp = document.getElementById("username_field").value;
 	localStorage.setItem('settings.user', temp);
 		$('#name').html(temp);
+	let whurl = document.getElementById("discordurl").value;
+	localStorage.setItem('user.webhook', whurl);
 };
