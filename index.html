@@ -14,7 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="newgetter.js"></script>
+		<script src="better.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="ducc.css">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -116,7 +116,7 @@ close
       </div>
     <!-- Modal body -->
       <div class="modal-body">
-        <button class="stream" type="button" name="button" onclick="getCurrentlyPlaying();"><span class="material-icons">
+        <button class="stream" type="button" name="button" onclick="dtv.get.movie.posters('now_playing');"><span class="material-icons">
 movie
 </span><br>In Cinemas</button>
 				<button class="stream" type="button" name="button" onclick="getTopRated();"><span class="material-icons">
@@ -205,7 +205,7 @@ close
 <br>
 								<div class="webhook_url">
 									<p>Send saved items to Discord</p>
-									<input type="text" id="discordurl" name="" placeholder="https://canary.discordapp.com/api/webhooks/...">
+									<input type="text" id="discordurl" name="" placeholder="https://discordapp.com/api/webhooks/...">
 								</div>
 				</span>
       </div>
